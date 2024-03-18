@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <meta name="author" content="Matheus Rodela">
+    <meta name="description" content="Crie um site imobiliário personalizado e publique seus imóveis nos 8 maiores portais imobiliários do país através de uma unica plataforma.">
+    <meta name="theme-color" content="rgb(0, 20, 77)">
+    <title>Site personalizado e anúncios nos 8 maiores portais do país.</title>
+
+    <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!--CSS - Nav bar-->
+        <link rel="stylesheet" href="/NavBar/NavBar.css">
+        <link rel="stylesheet" href="/NavBar/HamburgerAnimation/HamburgerAnimation.css">
+    <!--CSS - Framework -> Main; Contato; Footer; Components-->
+        <link rel="stylesheet" href="/framework/Footer/Contato.css">
+        <link rel="stylesheet" href="/framework/Footer/Footer.css">
+        <link rel="stylesheet" href="/framework/Footer/Faq.css">
+        <link rel="stylesheet" href="/framework/Page/Main.css">
+        <link rel="stylesheet" href="/framework/Components/components.css">
+    <!--CSS - Current page-->
+    <link rel="stylesheet" href="/framework/Page/SaibaMais.css">
+    <link rel="stylesheet" href="/Paginas/Divulgacao.css">
+    <!--JS - don't forget the 'defer property'-->
+        <script src="/NavBar/NavBar.js" defer></script>
+        <script src="/NavBar/HamburgerAnimation/HamburgerAnimation.js" defer></script>
+        <script src="/NavBar/NavScroll.js" defer></script>
+        <script src="/framework/page.js" defer></script>
+    <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="/Images/Site/favicon.ico">
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+    <header>
+        <!--CSS do nav em NavBar>NavBar-->
+            <nav class="NavBar" id="navbar">
+                <div class="Menu"  id="ToggleButton">
+                    <div class="menu-btn">
+                        <div class="menu-btn__burger"></div>
+                    </div>
+                </div>
+
+                <div id="logoContainer">
+                    <a href="/index.html">
+                        <img src="/Images/Site/Horizontalimobplace.svg" alt="Logomarca" id="PrimaryIcon">
+                        <!--Revisar caminho da imagem-->
+                    </a>
+                </div>
+    
+                <ul class="NavList" id="NaviList">
+                    <a href="/Paginas/Pricing.html"><li class="ListItem">Preços</li></a>
+                    <a href="/Paginas/Divulgacao.html"><li class="ListItem" id="Focus">Divulgação de imóveis</li></a>
+                    <a href="/Paginas/Organizacao.html"><li class="ListItem">CRM e gestão de contratos</li></a>
+                    <a href="/Paginas/Rede.html"><li class="ListItem">Rede de corretores parceiros</li></a>
+                <!--Add 'id="Focus"' na página atual-->
+                <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                </ul>
+    
+                <ul class="NavListDesktop">
+                    <a href="/Paginas/Pricing.html"><li class="ListItemDesktop"><button>Conheça Nossos Pacotes</button></li></a>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <!--CSS body; main; article; section. em framework>Page>Main -->
+        <div class="page-wrapper">
+            <article id="mainBanner">
+                <div id="h2Container"><h2>Divulgação</h2></div>
+                <h1>Aumente a visibilidade de seus imóveis e acelere suas vendas!</h1>
+                <p>Publique seus imóveis em muitos mais portais, melhore a qualidade dos seus anúncios, reduza seus gastos e aumente seus lucros.</p>
+                <button class="secondaryButton"><a href="#cardsWrapper">Saiba Como</a></button>
+    
+                <img src="/Images/Site/Organizacao/Banner/Group 674.svg" alt="Enfeite de tela - bolinhas" id="bolinhasGeral">
+                <img src="/Images/Site/Rede/Group 553.png" alt="Enfeite de tela - bolinhas desktop" id="bolinhasDesktop">
+            </article>
+
+            <article id="cardsWrapper">
+                <h1>Como a Imobplace vai te ajudar a fazer ainda mais negócios</h1>
+    
+                <div id="cardsWrapperDesktop">
+                    <section class="cards">
+                        <img src="/Images/Site/Divulgacao/Vector-1.svg" alt="Desenho de uma mão entregando uma casa.">
+                        <h2>ANÚNCIe em 8  PORTAIS</h2>
+                        <p>50% dos seus imóveis cadastrados no CRM serão publicados nos 8 maiores portais imobiliários do país.</p>
+                    </section>
+        
+                    <section class="cards">
+                        <img src="/Images/Site/Divulgacao/Vector-2.svg" alt="Desenho de um globo com uma lupa.">
+                        <h2>OTIMIZAÇÃO PARA SEO</h2>
+                        <p>Material e consultorias para melhorar o posicionamento dos seus anúncios nos portais</p>
+                    </section>
+
+                    <section class="cards">
+                        <img src="/Images/Site/Divulgacao/Component 11.svg" alt="Desenho de um computador com 'WWW.' escrito na tela.">
+                        <h2>Um site só seu</h2>
+                        <p>Escolha um de nossos layouts otimizados para alta perfomance na internet e tenha um site próprio.</p>
+                    </section>
+        
+                    <section class="cards" id="cardParceiroDoUrso"> <!--Display: none-->>
+                        <img src="/Images/Site/Rede/Urso.svg" alt="Logo Branca">
+                        <h2>PARCEIRO URSO</h2>
+                        <p>Os corretores Parceiros do Urso podem <span>publicar gratuitamente</span> todos os seus imóveis para aluguel em todos os 10 portais parceiros. </p>
+                    </section>
+                </div>
+    
+                <button class="primaryButton4"><a href="/Paginas/Pricing.html">Nossos pacotes</a></button>
+            </article>
+
+            <article id="estruturaDoAnuncioTitle">
+                <h1>CONHEÇA A ESTRUTURA DO SEU ANÚNCIO</h1>
+                <p>Clique nos números para ver mais detalhes.</p>
+            </article>
+        </div>
+        
+            <article id="estruturaDoAnuncio">
+                <section class="estrutura" id="estrutura1">
+                    <img src="/Images/Site/Divulgacao/estruturaDoAnuncio/iphone_banner1.webp" alt="Foto de um anúncio de imóvel." title="Foto de um anúncio de imóvel">
+                    <div id="customButton1" >1</div>
+                    <div class="modal" id="modal1">
+                        <div class="modalHeader">
+                            <div class="textWrapper">
+                                <h2>estrutura do anúncio</h2>
+                                <h1>fotos</h1>
+                            </div>
+                            <img src="/Images/Site/Divulgacao/estruturaDoAnuncio/modal/Vector.svg" alt="Desenho de uma camera fotográfica.">
+                        </div>
+                        <p>As fotos são o componente mais importante o fator que mais influencia na nota dos seus anúncios. Por isso, é muito importante que você coloque pelo menos 20 fotos no seus anúncios.</p>
+                    </div>
+
+                    <div id="customButton2">2</div>
+                    <div class="modal" id="modal2">
+                        <div class="modalHeader">
+                            <div class="textWrapper">
+                                <h2>ESTRUTURA DO ANÚNCIO</h2>
+                                <h1>título</h1>
+                            </div>
+                            <img src="/Images/Site/Divulgacao/estruturaDoAnuncio/modal/title_black_24dp 1.svg" alt="Letra T">
+                        </div>
+                        <p>O título do anúncio agora é gerado automaticamente utilizando a primeira linha da descrição do anúncio na maioria dos grandes portais.</p>
+                    </div>
+                </section>
+
+                <section class="estrutura" id="estrutura2">
+                    <img src="/Images/Site/Divulgacao/estruturaDoAnuncio/iphone_banner21.webp" alt="Foto de um anúncio de imóvel." title="Foto de um anúncio de imóvel">
+
+                    <div id="customButton3">3</div>
+                    <div class="modal" id="modal3">
+                        <div class="modalHeader">
+                            <div class="textWrapper">
+                            <h2>ESTRUTURA DO ANÚNCIO</h2>
+                            <h1>contato</h1>
+                        </div>
+                            <img src="/Images/Site/Divulgacao/estruturaDoAnuncio/modal/toc_black_24dp 1.svg" alt="Desenho de menu 'hamburger'.">
+                        </div>
+                        <p>Para conseguirmos centralizar todas as suas leads no CRM por um preço abaixo do valor de mercado, todos os anúncios são publicados sobre o nome da Imobplace. Mas não se preocupe, os contatos recebidos no anúncio são transferidos imediatamente para o seu CRM e as ligações e mensagens via Whatsapp recebidas no telefone informado são transferidas imediatamente para o seu telefone.</p>
+                    </div>
+                </section>
+            </article>
+
+            <article id="estruturaDoAnuncioDesktop">
+                <div id="estruturaDoAnuncioDesktopTitle">
+                    <h1>CONHEÇA A ESTRUTURA DO SEU ANÚNCIO</h1>
+                    <p>Clique no "i" para ver mais detalhes.</p>
+                </div>
+
+                <img src="/Images/Site/Divulgacao/estruturaDoAnuncio/anuncioDesktop.png" alt="Foto de um anúncio em um dos portais parceiros." id="anuncioDesktop">
+
+                <img src="/Images/Site/Divulgacao/estruturaDoAnuncio/Vector.svg" alt="Mais informações" class="info" id="info1">
+                <div class="modal" id="modal1">
+                    <div class="modalHeader">
+                        <div class="textWrapper">
+                            <h2>estrutura do anúncio</h2>
+                            <h1>fotos</h1>
+                        </div>
+                        <div class="modalImageWrapper">
+                            <img src="/Images/Site/Divulgacao/estruturaDoAnuncio/modal/Vector.svg" alt="Desenho de uma camera fotográfica.">
+                        </div>
+                    </div>
+                    <p>As fotos são o componente mais importante o fator que mais influencia na nota dos seus anúncios. Por isso, é muito importante que você coloque pelo menos 20 fotos no seus anúncios.</p>
+                </div>
+
+                <img src="/Images/Site/Divulgacao/estruturaDoAnuncio/Vector.svg" alt="Mais informações" class="info" id="info2">
+                <div class="modal" id="modal2">
+                    <div class="modalHeader">
+                        <div class="textWrapper">
+                            <h2>ESTRUTURA DO ANÚNCIO</h2>
+                            <h1>título</h1>
+                        </div>
+                        <div class="modalImageWrapper">
+                            <img src="/Images/Site/Divulgacao/estruturaDoAnuncio/modal/title_black_24dp 1.svg" alt="Letra T">
+                        </div>
+                    </div>
+                    <p>O título do anúncio agora é gerado automaticamente utilizando a primeira linha da descrição do anúncio na maioria dos grandes portais.</p>
+                </div>
+
+                <img src="/Images/Site/Divulgacao/estruturaDoAnuncio/Vector.svg" alt="Mais informações" class="info" id="info3">
+                <div class="modal" id="modal3">
+                    <div class="modalHeader">
+                        <div class="textWrapper">
+                        <h2>ESTRUTURA DO ANÚNCIO</h2>
+                        <h1>contato</h1>
+                    </div>
+                        <div class="modalImageWrapper">
+                            <img src="/Images/Site/Divulgacao/estruturaDoAnuncio/modal/toc_black_24dp 1.svg" alt="Desenho de menu 'hamburger'.">
+                        </div>
+                    </div>
+                    <p>Para conseguirmos centralizar todas as suas leads no CRM por um preço abaixo do valor de mercado, todos os anúncios são publicados sobre o nome da Imobplace. Mas não se preocupe, os contatos recebidos no anúncio são transferidos imediatamente para o seu CRM e as ligações e mensagens via Whatsapp recebidas no telefone informado são transferidas imediatamente para o seu telefone.</p>
+                </div>
+            </article>
+
+        <div class="page-wrapper">
+            <article id="parceriaComOUrso">
+                <img src="/Images/Site/Rede/Urso.svg" alt="Logo Branca">
+                <h1>PARCERIA COM O URSO</h1>
+                <p>Em parceria com o Urso <span>você ganha seu próprio Gestor de Contas</span>, que além de responsável por seus aluguéis também é especialista em qualidade de anúncios pronto para te ajudar a melhorar seu ranqueamento nos portais.</p>
+                <img src="/Images/Site/Divulgacao/Star 3.svg" alt="estrela" id="estrela">
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <section class="faq">
+        <!--CSS do faq em framework>Footer>Faq-->
+            <h2>PERGUNTAS FREQUENTES</h2>
+
+            <details>
+                <summary>Todos os meus imóveis serão postados nos sites de corretores parceiros?</summary>
+                <p> Não. Você pode escolher quais imóveis serão disponibilizados para a rede de parceiros Imobplace. Entretanto, vale ressaltar que os imóveis publicados na rede de parceiros tem chances bem mais altas de gerar negócios.</p>
+            </details>
+
+            <details>
+                <summary>Meu nome e telefone não aparecem nos portais de anúncios. Como o cliente vai entrar em contato comigo?</summary>
+                <p>Contatos feitos através do nosso telefone serão redirecionados para o telefone cadastrado por você. <br>
+                    Contatos feitos através do nosso Whatsapp serão redirecionados para o Whataspp do número cadastrado. <br>
+                    Contatos feitos através do botão de interesse dos portais ou através do seu site chegarão na aba de leads do seu CRM. </p>
+            </details>
+
+            <details>
+                <summary>Posso colocar marca d'agua nos meus anúncios?</summary>
+                <p>Sim. Basta cadastrá-la nas configurações do seu perfil e ela será adicionada automaticamente nas fotos dos seus imóveis.</p>
+            </details>
+
+            <details>
+                <summary>Como vou saber se meus anúncios estão bons ou ruins?</summary>
+                <p>Nossa equipe de suporte faz relatórios das notas dos seus anúncios nos portais para que você saiba se precisa melhorá-los.</p>
+            </details>
+
+            <details>
+                <summary>Meus anúncios nos portais tem destaque/topo?</summary>
+                <p>Os imóveis mais bem qualificados pelos portais parceiros pela sua qualidade serão colocados em destaque/topo sem custo adicional. Consulte o suporte para saber qual a nota de corte do mês e quantos destaques/topos serão publicados.</p>
+            </details>
+
+            <details>
+                <summary>Posso comprar destaques/topos nos portais? </summary>
+                <p>Não. Os destaques/topos são conquistados através de meritocracia. Os imóveis mais bem qualificados pelos portais parceiros pela sua qualidade serão colocados em destaque/topo sem custo adicional.</p>
+            </details>
+
+            <h3><a href="/Paginas/FaqPage.html">Ver mais</a></h3>
+
+            <button class="secondaryButton"><a href="#">Conheça nossos pacotes</a></button>
+            <img src="/Images/Site/Contato/EnfeiteDeTela.svg" alt="Bolinhas" id="Bolinhas">
+            <img src="/Images/Site/Faq/Group 635.png" alt="Enfeite de tela" id="BolinhasDesktop">
+            <!--Revisar caminho da imagem-->
+        </section>
+
+        <section class="contact">
+            <!--CSS do contact em framework>Footer>Contato-->
+                <h2>Contato</h2>
+                <p>Ficou com alguma dúvida ou quer saber mais sobre a empresa? Envie sua mensagem e responderemos o mais rápido possível!</p>
+    
+                <form action="" id="Contato">
+                    <fieldset form="Contato" name="inputsContato">
+                        <label for="Nome">Nome</label>
+                        <input type="text" id="Nome" placeholder="Nome" form="Contato" name="Nome" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" placeholder="Email" form="Contato" name="Email" required title="É obrigatório preencher todos os campos para o envio da mensagem"title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Telefone">Telefone</label>
+                        <input type="tel" id="Telefone" placeholder="Telefone" form="Contato" name="Telefone" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Assunto">Assunto</label>
+                        <input type="text" list="AssuntoContato" id="Assunto" placeholder="Assunto" form="Contato" name="Contato" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Mensagem"></label>
+                        <textarea name="Mensagem" id="Mensagem" placeholder="Mensagem" cols="20" rows="10" form="Contato" required title="É obrigatório preencher todos os campos para o envio da mensagem"></textarea>
+        
+                    <button type="submit" id="EnviarButton" form="Contato" name="Enviar" value="Enviar">Enviar</button>
+                    </fieldset>
+                </form>
+    
+                <datalist id="AssuntoContato" name="AssuntoContato">
+                    <option>Dúvida</option>
+                    <option>Sugestão</option>
+                    <option>Reclamação</option>
+                </datalist>
+
+                <img src="/Images/Site/Footer/mascoteContatoDesktop.png" alt="Mascote fazendo sinal de joia." class="mascotContatoDesktop">
+            </section>
+
+        <section class="footer">
+            <div id="footerTextContainer">
+                <div class="logoAndLegal">
+                    <div id="logoFooterContainer">
+                        <img src="/Images/Site/Footer/LogoUrsoBranca.svg" alt="Logo Urso Branca">
+                        <!--Revisar caminho da imagem-->
+                    </div>
+                    <p id="copyright">© 2022  imobplace &emsp; <small>CNPJ: 43.886.546./0001-02</small> <br> <small>CRECI/PJ-MG: 7197 &emsp; IM/BH: 1.342.874/001-6</small></p>
+                </div>
+    
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="/Paginas/Pricing.html">Planos</a></li>
+                        <li><a href="/Paginas/FaqPage.html">Perguntas Frequentes</a></li>
+                        <li><a href="/Paginas/termosDeAdesao.html">Termos de adesão</a></li>
+                        <li><a href="/Paginas/Cookies.html">Cookies</a></li>
+                        <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                    </ul>
+                </div>
+
+                <div id="RightSideDesktop">
+                    <div class="footerNavDesktop">
+                        <li><a href="/Paginas/Pricing.html">Planos</a></li>
+                        <li><a href="/Paginas/FaqPage.html">Perguntas Frequentes</a></li>
+                        <li><a href="/Paginas/termosDeAdesao.html">Termos de adesão</a></li>
+                        <li><a href="/Paginas/Cookies.html">Cookies</a></li>
+                    </div>
+        
+                    <div class="SocialMediaContainer">
+                        <a href="https://www.facebook.com/Imobplace"><img src="/Images/Site/Footer/Facebook.svg" class="socialMedia" alt="Logo Facebook"></a>
+                        <a href="https://instagram.com/imobplace_?igshid=YmMyMTA2M2Y="><img src="/Images/Site/Footer/Instagram.svg" class="socialMedia" alt="Logo Instagram"></a>
+                        <a href="https://www.linkedin.com/company/imobplace/"><img src="/Images/Site/Footer/LinkedIn.svg" class="socialMedia" alt="Logo LinkedIn"></a>
+                        <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                    </div>
+                </div>
+            </div>
+
+            <img src="/Images/Site/Footer/MascoteFooter.svg" alt="Mascote fazendo sinal de joia." id="mascoteFooter">
+        </section>
+    </footer>
+    </div>      
+</body>
+</html>

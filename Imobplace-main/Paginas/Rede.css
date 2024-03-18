@@ -1,0 +1,148 @@
+
+/*BANNER*/
+#mainBanner{
+    background-image: url(/Images/Site/Rede/mainBanner.png); 
+
+    padding: 6.5rem 2rem 10rem;
+}
+
+#mainBanner h2{
+    padding-bottom: 1.8rem;
+}
+
+#bolinhasGeral{
+    top: 24.5rem;
+    left: 12rem;
+}
+
+
+
+/*BUTTON*/
+.primaryButton4{
+    margin: 0;
+}
+
+/*VIDEO*/
+    #videoRede{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        background-color: rgb(233, 233, 233);
+
+        height: 20rem;
+    }
+
+   #videoRede iframe{
+    width: 90vw; 
+    height: 250px;
+    border-radius: 15px;
+    }
+
+/*FAQ*/
+.faq{
+    padding-top: 1.5rem;
+}
+
+
+@media (min-width: 700px){
+
+    /*Banner*/
+    #mainBanner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    
+        height: 110vh;
+        width: 100vw;
+
+        background-image: url(/Images/Site/Rede/MainBannerDesktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        color: white;
+    
+        padding: 10rem;
+    }
+    
+    #mainBanner h2{
+        color: rgb(206, 254, 255);
+    
+        text-transform: uppercase;
+    
+        font-size: 1.1rem;
+    
+        padding-bottom: 1.5rem;
+    }
+    
+    #mainBanner h1{
+        font-size: 2.1rem;
+    
+        padding-bottom: 1.5rem;
+    
+        line-height: 2.3rem;
+
+        width: 40vw;
+    }
+    
+    #mainBanner p{
+        text-transform: uppercase;
+        font-weight: light;
+    
+        font-size: .9rem;
+        line-height: 1.4rem;
+    
+        padding-bottom: 0;
+
+        width: 44vw;
+    }
+    
+    #h2Container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    
+        padding-left: 0;
+    
+        width: 100vw;
+    }
+
+    #bolinhasGeral{
+        top: 80%;
+        left: 80%;
+    }
+
+    #mainBanner button{
+        font-size: .8rem;
+        padding: .6rem 2.5rem;
+    }
+
+
+    /*Video*/
+    #videoRede{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgb(233, 233, 233);
+
+        height: 25rem;
+    }
+
+    #videoRede iframe{
+        width: 500px; 
+        height: 300px;
+        border-radius: 15px;
+    }
+
+
+    /*FAQ*/
+    #BolinhasDesktop{
+        top: -25%;
+        left: -3%;
+    }
+}

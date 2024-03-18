@@ -1,0 +1,454 @@
+
+/*MAIN BANNER*/
+#mainBanner{
+    background-image: url(/Images/Site/Divulgacao/mainBanner.png);
+}
+
+/*CARDS*/
+#cardParceiroDoUrso{
+    display: none;
+    background-color: rgb(0, 146, 155);
+
+    margin-bottom: 2.5rem;
+}
+
+#cardParceiroDoUrso p, #cardParceiroDoUrso h2{
+    color: white;
+}
+
+#cardParceiroDoUrso span{
+    font-weight: bold;
+}
+
+.primaryButton4{
+    margin: 1rem 0;
+}
+
+/*ESTRUTURA DO ANUNCIO*/
+#estruturaDoAnuncioTitle{
+    background-color: rgb(243, 243, 243);
+
+    padding-top: 2rem;
+}
+
+#estruturaDoAnuncioTitle h1{
+    text-align: center;
+    font-size: 1.4rem;
+    color: rgb(0, 41, 153);
+
+    padding: 0 2rem;
+}
+
+#estruturaDoAnuncioTitle p{
+    text-align: center;
+    font-size: 1rem;
+
+    padding: 1rem 0;
+}
+
+/*scroll*/
+#estruturaDoAnuncio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+
+    background-color: rgb(243, 243, 243);
+}
+
+.estrutura{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    min-width: 100vw;
+    height: fit-content;
+
+    scroll-snap-align: start;
+}
+
+.estrutura img{
+    width: 95vw;
+    margin-bottom: 4rem;
+}
+
+#estrutura1, #estrutura2{
+    display: flex;
+    position: relative;
+}
+
+#estrutura1{
+    background-image: url(/Images/Site/Divulgacao/estruturaDoAnuncio/Component\ 8.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 96%;
+    background-size: 12%;
+}
+
+#estrutura2{
+    background-image: url(/Images/Site/Divulgacao/estruturaDoAnuncio/Component\ 9.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 97%;
+    background-size: 12%;
+}
+
+#customButton1, #customButton2, #customButton3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+
+    background-color: rgb(0, 41, 153);
+    color: rgb(161, 250, 255);
+    position: absolute;
+
+    user-select: none;
+}
+
+#customButton1{
+    top: 22%;
+    left: 21%;
+}
+
+#customButton2{
+    top: 46%;
+    right: 22%;
+}
+
+#customButton3{
+    top: 56%;
+    left: 51%;
+}
+
+#estruturaDoAnuncioDesktop{
+    display: none;
+}
+
+/*modal*/
+.modal{
+    position: absolute;
+
+    max-width: 82vw;
+    height: fit-content;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: rgba(243, 243, 243, .95);
+    box-shadow: -1px 5px 5px 0 rgba(68, 67, 67, 0.9);
+
+    padding: .5rem;
+
+    z-index: 0;
+}
+
+.modalHeader{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed rgb(163, 187, 255);
+
+    height: 4.5rem;
+    padding: .2rem;
+}
+
+.textWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal h2{
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: rgb(2, 198, 210);
+}
+
+.modal h1{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: rgb(0, 24, 90);
+}
+
+.modal p{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin-top: .6rem;
+    padding: 0 .5rem .5rem;
+}
+
+.modal img{
+    margin: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#modal1{
+    display: none;
+    top: 28%;
+}
+
+#modal2{
+    display: none;
+    top: 52%;
+}
+
+#modal3{
+    display: none;
+    top: 7%;
+}
+
+#modal3 img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+/*modal animations*/
+#customButton1:hover + #modal1{
+    display: block;
+
+    z-index: 10;
+}
+
+#customButton2:hover + #modal2{
+    display: block;
+
+    z-index: 10;
+}
+
+#customButton3:hover + #modal3{
+    display: block;
+
+    z-index: 10;
+}
+
+/*PARCERIA COM O URSO*/
+#parceriaComOUrso{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3.5rem 3.5rem 0;
+
+    background-color: rgb(0, 146, 155);
+    color: white;
+}
+
+#parceriaComOUrso img{
+    height: 7rem;
+
+    padding-bottom: 2rem;
+}
+
+#parceriaComOUrso h1{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+#parceriaComOUrso p{
+    text-align: center;
+    
+    font-size: 1.3rem;
+
+    font-weight: lighter;
+}
+
+#parceriaComOUrso span{
+    font-weight: bold;
+}
+
+#estrela{
+    width: 2.5rem;
+}
+
+
+@media (min-width: 700px) and (orientation: landscape){
+    #mainBanner{
+        background-image: url(/Images/Site/Divulgacao/mainBannerDesktop.png);
+    }
+
+    #cardParceiroDoUrso{
+        margin-bottom: 0;
+    }
+
+    #cardsWrapperDesktop{
+        padding: 0 5rem 2rem;
+    }
+
+    /*Estrutura do seu anúncio*/
+    #estruturaDoAnuncio, #estruturaDoAnuncioTitle{
+        display: none;
+    }
+
+    #estruturaDoAnuncioDesktop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        padding: 0 3rem;
+        height: 110vh; /*Temporário*/
+        background-color: rgb(0, 146, 155);
+    }
+
+    #estruturaDoAnuncioDesktopTitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        color: white;
+    }
+
+    #estruturaDoAnuncioDesktopTitle p{
+        font-size: 1.2rem;
+        margin-top: .8rem;
+    }
+
+    #anuncioDesktop{
+        width: 80vw;
+        margin-right: 5vw;
+    }
+
+    .info{
+        width: 2rem;
+        position: absolute;
+    }
+
+    #info1{
+        top: 19%;
+        left: 13.5%;
+    }
+
+    #info2{
+        top: 60%;
+        left: 5.5%;
+    }
+
+    #info3{
+        top: 23%;
+        right: 11.5%;
+    }
+
+
+    /*modal*/
+    .modal{
+        position: absolute;
+
+        max-width: 28vw;
+        height: fit-content;
+        border: 1px solid gray;
+        border-radius: 15px;
+        background-color: rgba(243, 243, 243, .95);
+        box-shadow: -1px 5px 5px 0 rgba(68, 67, 67, 0.9);
+
+        padding: .5rem 1rem 1rem;
+
+        z-index: 0;
+    }
+
+    .modalHeader{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px dashed rgb(163, 187, 255);
+
+        height: 4.5rem;
+        padding-bottom: .5rem;
+    }
+
+    .textWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .modal h2{
+        font-size: .8rem;
+        text-transform: uppercase;
+        color: rgb(2, 198, 210);
+    }
+
+    .modal h1{
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: rgb(0, 24, 90);
+    }
+
+    .modal p{
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin-top: .6rem;
+        padding: 0 .5rem .5rem;
+    }
+
+    .modalImageWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+
+    .modal img{
+        margin: 0;
+        width: 2rem;
+        height: auto;
+    }
+
+    #modal1{
+        display: none;
+        top: 20%;
+        left: 18%;
+    }
+
+    #modal2{
+        display: none;
+        top: 58%;
+        left: 10%;
+    }
+
+    #modal3{
+        display: none;
+        top: 20%;
+        right: 15%;
+    }
+
+    #modal3 img{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    /*modal animations*/
+    #info1:hover + #modal1{
+        display: block;
+
+        z-index: 10;
+    }
+
+    #info2:hover + #modal2{
+        display: block;
+
+        z-index: 10;
+    }
+
+    #info3:hover + #modal3{
+        display: block;
+
+        z-index: 10;
+    }
+
+    /*Parceiro do urso*/
+    #parceriaComOUrso{
+        display: none;
+    }
+}

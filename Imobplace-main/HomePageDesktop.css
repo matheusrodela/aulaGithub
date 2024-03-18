@@ -1,0 +1,635 @@
+@media (min-width: 700px){
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    /*BANNER*/
+    #mainBanner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-between;
+
+        background-color: rgb(0, 20, 77);
+        
+        min-height: 100vh;
+
+        padding: 0 0 4rem;
+    }
+
+    .BannerTextWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        flex-shrink: 1;
+
+        min-width: 50vw;
+
+        padding: 0 4rem 0 8rem;
+    }
+
+    #mainBanner h1{
+        font-size: 2.5rem;
+
+        margin-bottom: 1.5rem;
+    }
+
+    #mainBanner p{
+        color: white;
+
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+
+        margin-bottom: 2rem;
+        padding-right: 1rem;
+    }
+
+    /*Image*/
+    #mainBanner #Mobile{
+        display: none;
+    }
+
+    .imgWrapper #Desktop{
+        display: flex;
+        flex-shrink: 5;
+        max-height: 90vh;
+        width: auto;
+        margin: 2.5rem 0 0;
+        padding: 0 0 2rem;
+    }
+
+    /*Button*/
+    #mainBanner button{
+        display: none;
+    }
+
+    #mainBanner #DesktopButton{
+        display: block;
+        padding: .6rem 5rem;
+        margin-bottom: 2rem;
+    }
+
+
+    /*LOGOS PORTAIS*/
+    #LogosPortais{
+        display: flex;
+        align-items: center;
+        width: 100rem;
+        height: fit-content;
+        padding: 0;
+
+        background-color: white;
+    }
+
+    .logosContainer{
+        width: 130%;
+        animation-name: animação;
+        animation-duration: 35s;
+        animation-iteration-count:infinite;
+
+        padding: 0;
+
+        background-color: white;
+    }
+
+    @keyframes animação{
+        0% {margin-left: 0;}
+        50% {margin-left:-14%}
+        51% {margin-left:-14%}
+        100% {margin-left: 0%}
+    }
+
+    .portais{
+        height: 2.3rem;
+
+        margin: 2rem 2.5rem;
+    }
+
+
+    /*VANTAGENS*/
+    #Vantagens{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+
+        max-height: 90vh;
+        min-height: 85vh;
+
+        background-color: white;
+    }
+
+    #imageVantagens{
+        display: none;
+    }
+
+    #imageVantagensDesktop{
+        max-width: 30vw;
+
+        margin-right: 3rem;
+    }
+
+    .cardsVantagensWrapper{
+        min-width: 30vw;
+        max-height: 65vh;
+
+        margin-top: 5rem;
+
+        overflow-y: scroll;
+
+    }
+
+    .cardsVantagensWrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .cardsVantagens{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        margin-top: 3rem;
+
+        padding: 0;
+    }
+
+    .cardsVantagens:first-child{
+        margin: 1rem 0;
+    }
+
+    .cardsVantagens img{
+        height: 2rem;
+
+        margin-bottom: 1rem;
+    }
+
+    .cardsVantagens h2{
+        font-size: 1.1rem;
+
+        color: rgb(0, 139, 148);
+
+        margin-bottom: .6rem;
+    }
+
+    .cardsVantagens h1{
+        font-size: 1.5rem;
+
+        color: rgb(0, 40, 151);
+
+        margin-bottom: .7rem;
+    }
+
+    .cardsVantagens p{
+        font-size: 1rem;
+        max-width: 23rem;
+
+        text-align: justify;
+
+        color: rgb(81, 81, 81);
+    }
+
+
+    /*VIDEO*/
+    #video{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgb(233, 233, 233);
+
+        height: 25rem;
+    }
+
+    iframe{
+        width: 500px; 
+        height: 300px;
+        border-radius: 15px;
+    }
+
+
+    /*SUA JORNADA*/
+    #saibaMais{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 1rem 3rem 3rem;
+
+        background-color: rgb(243, 243, 243);
+    }
+
+    .cardsWrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        width: 63.5vw;
+        margin-top: 1rem;
+
+        gap: 2rem;
+    }
+
+    .cardsSaibaMais{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+
+        border: 1px solid rgb(198, 198, 198);
+        border-radius: 25px;
+        box-shadow: 0px 4px 5px 0 rgba(68, 67, 67, 0.6);
+
+        padding: 2.75rem 1.5rem 1rem;
+        margin: .75rem 0;
+    }
+
+    .cardsSaibaMais:first-child{
+        box-shadow: -1.5px 4.5px 5px 0 rgba(68, 67, 67, 0.6)
+    }
+
+    .cardsSaibaMais:last-child{
+        box-shadow: 1.5px 4.5px 5px 0 rgba(68, 67, 67, 0.6)
+    }
+
+    .cardsSaibaMais img{
+        height: 8rem;
+
+        padding-bottom: 1rem;
+    }
+
+    .cardsSaibaMais span{
+        width: 10rem;
+        border-bottom: 1px dashed rgb(163, 163, 163);
+
+        margin-bottom: 1rem;
+    }
+
+    #saibaMais h1{
+        font-size: 1.2rem;
+        text-transform: capitalize;
+
+        text-align: center;
+        
+        color: rgb(81, 81, 81);
+
+        margin: 0;
+        padding: 1rem 0;
+    }
+
+    #saibaMais p{
+        text-align: center;
+        font-size: 1.1rem;
+        color: rgb(122, 122, 122);
+    }
+
+    #saibaMais button{
+        align-items: center;
+        justify-content: center;
+
+        font-size: .9rem;
+
+        text-transform: capitalize;
+        font-weight: normal;
+
+        padding: .5rem 2.3rem;
+
+        margin: 2rem 0 1.5rem;
+    }
+
+    /*hover*/
+    .cardsSaibaMais:hover{
+        margin: 0;
+        padding: 2rem 1.5rem 1.38rem;
+
+        box-shadow: 0px 7px 5px 0 rgba(68, 67, 67, 0.3);
+
+        height: fit-content;
+    }
+
+    .cardsSaibaMais:first-child:hover{
+        box-shadow: -3px 5px 8px 3px rgba(68, 67, 67, 0.3)
+    }
+
+    .cardsSaibaMais:last-child:hover{
+        box-shadow: 3px 5px 8px 3px rgba(68, 67, 67, 0.3)
+    }
+
+    .cardsSaibaMais:hover img{
+        height: 9rem;
+        margin: .38rem 0;
+    }
+
+
+    /*PARCEIRO DO URSO*/
+    #SejaParceiroDoUrso{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+
+        background-color: rgb(0, 146, 155);
+        color: white;
+
+        padding: 2rem 2rem 3rem;
+    }
+
+    #SejaParceiroDoUrso h1{
+        font-size: 1.8rem;
+        text-align: center;
+
+        padding: 1rem 0;
+    }
+
+    #SejaParceiroDoUrso p{
+        font-size: 1.4rem;
+        text-align: center;
+
+        padding-bottom: 1.5rem;
+    }
+
+    .cardParceiroDoUrsoWrapper{
+        display: flex;
+        flex-direction: row;
+
+        gap: 4rem;
+
+        margin-bottom: 1.5rem;
+    }
+
+    .cardParceiroDoUrso{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+
+        max-width: 11rem;
+        border: 0px;
+        margin: 2rem 0;
+    }
+
+    .cardParceiroDoUrso img{
+        height: 4rem;
+        
+        margin-bottom: .5rem;
+    }
+
+    .cardParceiroDoUrso h2{
+        font-size: 1.15rem;
+        text-align: center;
+
+        width: fit-content;
+
+        font-weight: lighter;
+    }
+
+    .cardParceiroDoUrso span{
+        font-size: 2rem;
+
+        font-weight: bold;
+    }
+
+    #SejaParceiroDoUrso button{
+        background-color: white;
+        padding: .5rem 7rem;
+
+        font-size: .8rem;
+    }
+
+    #SejaParceiroDoUrso button a{
+        color: rgb(0, 88, 94);
+    }
+
+    #SejaParceiroDoUrso button:hover{
+        font-size: .85rem;
+        padding: .51rem 7.3rem;
+    }
+
+    #enfeiteParceiroDoUrsoDesktop{
+        position: absolute;
+        height: 45%;
+
+        left: 83%;
+        top: 75%;
+    }
+
+
+    /*GRAFICO*/
+    #grafico{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    
+        padding: 6rem 5rem 3rem;
+
+        background-color: white;
+    }
+
+    #graficoTextWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 26vw;
+    }
+
+    #grafico h1{
+        font-size: 2rem;
+        color: rgb(0, 40, 151);
+
+        text-align: start;
+
+        margin: 2rem 0;
+    }
+
+    #grafico p{
+        font-size: 1rem;
+        color: rgb(81, 81, 81);
+
+        padding: 0;
+
+        line-height: 1.8rem;
+
+        margin-bottom: 2rem;
+    }
+
+    #graficoWrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+        background-image: none;
+    }
+
+    #graficoWrapper img{
+        max-width: 40vw;
+    }
+
+    #graficoWrapper img:first-child{
+        display: none;
+    }
+
+
+    /*DEPOIMENTOS*/
+    #depoimentos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-color: rgb(243, 243, 243);
+
+        color: rgb(0, 24, 90);
+
+        padding-top: 2rem;
+    }
+
+    #depoimentos h1{
+        display: none;
+    }
+
+    /*depoimentos e overflow*/
+    #scrollWrapper{
+        padding-bottom: 1.8rem;
+        background-color: rgb(243, 243, 243);
+    }
+
+    #wrapperDepoimentos{
+        background-image: url(/Images/Site/Home/Depoimentos/aspas.png);
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: 90% 0%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        background-color: rgb(243, 243, 243);
+
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    
+        scroll-behavior: smooth;
+    }
+
+    .Depoimento{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        min-width: 100vw;
+
+        padding: 0 18rem 1rem 15rem;
+
+        background-color: transparent;
+
+        scroll-snap-align: start;
+
+        color: rgb(0, 24, 90);
+    }
+
+    .depoimentosTextWrapper{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .Depoimento h1{
+        display: block;
+        font-size: 1.8rem;
+
+        text-align: start;
+
+        padding-bottom: 1rem;
+    }
+
+    .wrapperCorretores{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Depoimento img:first-child{
+        display: none;
+    }
+
+    .Depoimento img{
+        max-width: 16rem;
+        display: block;
+    }
+
+    .Depoimento p{
+        font-size: .9rem;
+        line-height: 1.4rem;
+    }
+
+    .Depoimento h2{
+        font-size: .85rem;
+    }
+
+    .Depoimento h3{
+        font-size: .7rem;
+    }
+
+    /*Desktop scrollbar*/
+    #wrapperDepoimentos::-webkit-scrollbar {
+        height: .9rem;
+        display: block;
+    }
+
+    #wrapperDepoimentos::-webkit-scrollbar-track {
+        background: linear-gradient(90deg, rgba(8, 196, 168, .2),50% , rgba(11, 146, 190, .2), rgba(13, 99, 211, .2));
+        border-radius: 50px;
+        margin: 1rem 18rem;
+        padding: 2rem 0;
+    }
+
+    #wrapperDepoimentos::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 47, 177, .1);
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 50px;
+    }
+
+    /*Faq*/
+    .faq{
+        background-color: white;
+    }
+
+    #BolinhasDesktop{
+        top: 72%;
+        left: 82%;
+    }
+
+    /*Footer*/
+    #Focus{
+        display: none;
+    }
+
+
+    /*Text Style*/
+    h1{
+        font-size: 1.4rem;
+    }
+
+    h2{
+        font-size: 1.35rem;
+    }
+
+
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <meta name="author" content="Matheus Rodela">
+    <meta name="description" content="Página pós compra Imobplace.">
+    <meta name="theme-color" content="rgb(0, 20, 77)">
+    <title>Parabéns pela compra!</title>
+
+    <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!--CSS - Nav bar-->
+        <link rel="stylesheet" href="/NavBar/NavBar.css">
+        <link rel="stylesheet" href="/NavBar/HamburgerAnimation/HamburgerAnimation.css">
+    <!--CSS - Framework -> Main; Contato; Footer; Components-->
+        <link rel="stylesheet" href="/framework/Footer/Contato.css">
+        <link rel="stylesheet" href="/framework/Footer/Footer.css">
+        <link rel="stylesheet" href="/framework/Footer/Faq.css">
+        <link rel="stylesheet" href="/framework/Page/Main.css">
+        <link rel="stylesheet" href="/framework/Components/components.css">
+    <!--CSS - Current page-->
+        <link rel="stylesheet" href="/Paginas/posCompra.css">
+
+    <!--JS - don't forget the 'defer property'-->
+        <script src="/NavBar/NavBar.js" defer></script>
+        <script src="/NavBar/HamburgerAnimation/HamburgerAnimation.js" defer></script>
+        <script src="/NavBar/NavScroll.js" defer></script>
+        <script src="/framework/page.js" defer></script>
+    <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="/Images/Site/favicon.ico">
+
+    <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+</head>
+
+<body>
+    <div class="page-wrapper">
+    <header>
+        <!--CSS do nav em NavBar>NavBar-->
+            <nav class="NavBar" id="navbar">
+                <div class="Menu"  id="ToggleButton">
+                    <div class="menu-btn">
+                        <div class="menu-btn__burger"></div>
+                    </div>
+                </div>
+
+                <div id="logoContainer">
+                    <a href="/index.html">
+                        <img src="/Images/Site/Horizontalimobplace.svg" alt="Logomarca" id="PrimaryIcon">
+                        <!--Revisar caminho da imagem-->
+                    </a>
+                </div>
+    
+                <ul class="NavList" id="NaviList">
+                    <a href="/Paginas/Pricing.html"><li class="ListItem">Preços</li></a>
+                    <a href="/Paginas/Divulgacao.html"><li class="ListItem">Divulgação de imóveis</li></a>
+                    <a href="/Paginas/Organizacao.html"><li class="ListItem">CRM e gestão de contratos</li></a>
+                    <a href="/Paginas/Rede.html"><li class="ListItem">Rede de corretores parceiros</li></a>
+                </ul>
+    
+                <ul class="NavListDesktop">
+                    <a href="/Paginas/Pricing.html"><li class="ListItemDesktop"><button>Conheça Nossos Pacotes</button></li></a>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <!--CSS body; main; article; section. em framework>Page>Main -->
+        <article id="posCompra">
+            <h1>Você já é parte do time!</h1>
+            <img src="/Images/Site/posCompra/Mascote1.webp" alt="Mascote de braços abertos">
+            <h2>Entre em contato com nossa equipe através do WhathsApp para receber seu acesso!</h2>
+
+            <div id="contatoWrapper">
+                <div id="contatoWapp">
+                    <h3>Clique aqui:</h3>
+                        <a href="https://api.whatsapp.com/send?phone=5531995202708&text=Olá! Finalizei minha compra pelo site Imobplace e gostaria de receber meu acesso ao CRM." target="_blank" id="linkWapp">
+                            <svg enable-background="new 0 0 512 512" width="40" height="40" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+                        </a>
+                </div>
+                <p>Ou envie uma mensagem para o número <strong>(31) 99520-2708</strong>.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+
+        <section class="contact">
+            <!--CSS do contact em framework>Footer>Contato-->
+                <h2>Contato</h2>
+                <p>Ficou com alguma dúvida ou quer saber mais sobre a empresa? Envie sua mensagem e responderemos o mais rápido possível!</p>
+    
+                <form action="" id="Contato">
+                    <fieldset form="Contato" name="inputsContato">
+                        <label for="Nome">Nome</label>
+                        <input type="text" id="Nome" placeholder="Nome" form="Contato" name="Nome" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" placeholder="Email" form="Contato" name="Email" required title="É obrigatório preencher todos os campos para o envio da mensagem"title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Telefone">Telefone</label>
+                        <input type="tel" id="Telefone" placeholder="Telefone" form="Contato" name="Telefone" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Assunto">Assunto</label>
+                        <input type="text" list="AssuntoContato" id="Assunto" placeholder="Assunto" form="Contato" name="Contato" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Mensagem"></label>
+                        <textarea name="Mensagem" id="Mensagem" placeholder="Mensagem" cols="20" rows="10" form="Contato" required title="É obrigatório preencher todos os campos para o envio da mensagem"></textarea>
+        
+                    <button type="submit" id="EnviarButton" form="Contato" name="Enviar" value="Enviar">Enviar</button>
+                    </fieldset>
+                </form>
+    
+                <datalist id="AssuntoContato" name="AssuntoContato">
+                    <option>Dúvida</option>
+                    <option>Sugestão</option>
+                    <option>Reclamação</option>
+                </datalist>
+
+                <img src="/Images/Site/Footer/mascoteContatoDesktop.png" alt="Mascote fazendo sinal de joia." class="mascotContatoDesktop">
+            </section>
+
+        <section class="footer">
+            <div id="footerTextContainer">
+                <div class="logoAndLegal">
+                    <div id="logoFooterContainer">
+                        <img src="/Images/Site/Footer/LogoUrsoBranca.svg" alt="Logo Urso Branca">
+                        <!--Revisar caminho da imagem-->
+                    </div>
+                    <p id="copyright">© 2022  imobplace &emsp; <small>CNPJ: 43.886.546./0001-02</small> <br> <small>CRECI/PJ-MG: 7197 &emsp; IM/BH: 1.342.874/001-6</small></p>
+                </div>
+    
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="/Paginas/Pricing.html">Planos</a></li>
+                        <li><a href="/Paginas/FaqPage.html">Perguntas Frequentes</a></li>
+                        <li><a href="/Paginas/termosDeAdesao.html">Termos de adesão</a></li>
+                        <li><a href="/Paginas/Cookies.html">Cookies</a></li>
+                        <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                    </ul>
+                </div>
+
+                <div id="RightSideDesktop">
+                    <div class="footerNavDesktop">
+                        <li><a href="/Paginas/Pricing.html">Planos</a></li>
+                        <li><a href="/Paginas/FaqPage.html">Perguntas Frequentes</a></li>
+                        <li><a href="/Paginas/termosDeAdesao.html">Termos de adesão</a></li>
+                        <li><a href="/Paginas/Cookies.html">Cookies</a></li>
+                    </div>
+        
+                    <div class="SocialMediaContainer">
+                        <a href="https://www.facebook.com/Imobplace"><img src="/Images/Site/Footer/Facebook.svg" class="socialMedia" alt="Logo Facebook"></a>
+                        <a href="https://instagram.com/imobplace_?igshid=YmMyMTA2M2Y="><img src="/Images/Site/Footer/Instagram.svg" class="socialMedia" alt="Logo Instagram"></a>
+                        <a href="https://www.linkedin.com/company/imobplace/"><img src="/Images/Site/Footer/LinkedIn.svg" class="socialMedia" alt="Logo LinkedIn"></a>
+                        <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                    </div>
+                </div>
+            </div>
+
+            <img src="/Images/Site/Footer/MascoteFooter.svg" alt="Mascote fazendo sinal de joia." id="mascoteFooter">
+        </section>
+    </footer>
+    </div>
+</body>
+</html>

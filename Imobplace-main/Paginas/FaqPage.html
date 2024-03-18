@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <meta name="author" content="Matheus Rodela">
+    <meta name="description" content="Perguntas frequentes Imobplace">
+    <meta name="theme-color" content="rgb(0, 20, 77)">
+    <title>Perguntas frequentes</title>
+
+    <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!--CSS - Nav bar-->
+        <link rel="stylesheet" href="/NavBar/NavBar.css">
+        <link rel="stylesheet" href="/NavBar/HamburgerAnimation/HamburgerAnimation.css">
+    <!--CSS - Framework -> Main; Contato; Footer; Components-->
+        <link rel="stylesheet" href="/framework/Footer/Contato.css">
+        <link rel="stylesheet" href="/framework/Footer/Footer.css">
+        <link rel="stylesheet" href="/framework/Footer/Faq.css">
+        <link rel="stylesheet" href="/framework/Page/Main.css">
+        <link rel="stylesheet" href="/framework/Components/components.css">
+    <!--CSS - Current page-->
+    <link rel="stylesheet" href="/framework/Page/SaibaMais.css">
+    <link rel="stylesheet" href="/Paginas/FaqPage.css">
+    <!--JS - don't forget the 'defer property'-->
+        <script src="/NavBar/NavBar.js" defer></script>
+        <script src="/NavBar/HamburgerAnimation/HamburgerAnimation.js" defer></script>
+        <script src="/NavBar/NavScroll.js" defer></script>
+        <script src="/framework/page.js" defer></script>
+    <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="/Images/Site/favicon.ico">
+
+    <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+</head>
+
+<body>
+    <div class="page-wrapper">
+    <header>
+        <!--CSS do nav em NavBar>NavBar-->
+            <nav class="NavBar" id="navbar">
+                <div class="Menu"  id="ToggleButton">
+                    <div class="menu-btn">
+                        <div class="menu-btn__burger"></div>
+                    </div>
+                </div>
+
+                <div id="logoContainer">
+                    <a href="/index.html">
+                        <img src="/Images/Site/Horizontalimobplace.svg" alt="Logomarca" id="PrimaryIcon">
+                        <!--Revisar caminho da imagem-->
+                    </a>
+                </div>
+    
+                <ul class="NavList" id="NaviList">
+                    <a href="/Paginas/Pricing.html"><li class="ListItem">Preços</li></a>
+                    <a href="/Paginas/Divulgacao.html"><li class="ListItem">Divulgação de imóveis</li></a>
+                    <a href="/Paginas/Organizacao.html"><li class="ListItem">CRM e gestão de contratos</li></a>
+                    <a href="/Paginas/Rede.html"><li class="ListItem">Rede de corretores parceiros</li></a>
+                <!--Add 'id="Focus"' na página atual-->
+                <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                </ul>
+    
+                <ul class="NavListDesktop">
+                    <a href="/Paginas/Pricing.html"><li class="ListItemDesktop"><button>Conheça Nossos Pacotes</button></li></a>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <!--CSS body; main; article; section. em framework>Page>Main -->
+        <section class="faq">
+            <!--CSS do faq em framework>Footer>Faq-->
+                <h1>PERGUNTAS FREQUENTES</h1>
+
+                <div class="detailsWrapper">
+                    <h2>site e anúncios</h2>
+                    <details>
+                        <summary>A imobplace atua como imobiliária?</summary>
+                        <p>Não! Nós não vendemos nem alugamos por conta própria. Quem conversa com o inquilino e o proprietário é você!</p>
+                    </details>
+
+                    <details>
+                        <summary>Todos os meus imóveis serão postados nos sites de corretores parceiros?</summary>
+                        <p> Não. Você pode escolher quais imóveis serão disponibilizados para a rede de parceiros Imobplace. Entretanto, vale ressaltar que os imóveis publicados na rede de parceiros tem chances bem mais altas de gerar negócios.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Meu nome e telefone não aparecem nos portais de anúncios. Como o cliente vai entrar em contato comigo?</summary>
+                        <p>Contatos feitos através do nosso telefone serão redirecionados para o telefone cadastrado por você. <br>
+                            Contatos feitos através do nosso Whatsapp serão redirecionados para o Whataspp do número cadastrado. <br>
+                            Contatos feitos através do botão de interesse dos portais ou através do seu site chegarão na aba de leads do seu CRM. </p>
+                    </details>
+        
+                    <details>
+                        <summary>Posso colocar marca d'agua nos meus anúncios?</summary>
+                        <p>Sim. Basta cadastrá-la nas configurações do seu perfil e ela será adicionada automaticamente nas fotos dos seus imóveis.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Como vou saber se meus anúncios estão bons ou ruins?</summary>
+                        <p>Nossa equipe de suporte faz relatórios das notas dos seus anúncios nos portais para que você saiba se precisa melhorá-los.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Meus anúncios nos portais tem destaque/topo?</summary>
+                        <p>Os imóveis mais bem qualificados pelos portais parceiros pela sua qualidade serão colocados em destaque/topo sem custo adicional. Consulte o suporte para saber qual a nota de corte do mês e quantos destaques/topos serão publicados.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Posso comprar destaques/topos nos portais? </summary>
+                        <p>Não. Os destaques/topos são conquistados através de meritocracia. Os imóveis mais bem qualificados pelos portais parceiros pela sua qualidade serão colocados em destaque/topo sem custo adicional.</p>
+                    </details>
+
+                    <details>
+                        <summary>Em quais portais os imóveis são anunciados</summary>
+                        <ol>
+                            <li>OLX</li>
+                            <li>Zap Imóveis</li>
+                            <li>Viva Real</li>
+                            <li>ImovelWeb</li>
+                            <li>Lugar Certo</li>
+                            <li>Mercado Livre</li>
+                            <li>Casa Mineira</li>
+                            <li>Campainha</li>
+                        </ol>
+                    </details>
+                </div>
+
+                <div class="detailsWrapper">
+                    <h2>CRM e leads</h2>
+                    <details>
+                        <summary>É possível transferir os imóveis do meu CRM atual para o Imobplace?</summary>
+                        <p>Sim, e é super fácil. Você encontra o passo a passo detalhado na nossa plataforma.</p>
+                    </details>
+
+                    <details>
+                        <summary>O que fazer se eu tiver dificuldades de uso?</summary>
+                        <p>Nossa equipe de suporte está sempre disposta a te ajudar a entender melhor o sistema. Caso necessário, você pode pedir uma aula por videochamada.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Eu posso editar as fases do funil de atendimento?</summary>
+                        <p>Não. O funil foi construído seguindo regras de otimização de atendimento e não pode ser modificado. Entretanto, sugestões são sempre bem vindas. Basta falar com algum atendente do suporte ou deixar sua mensagem no final do nosso site.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Posso cadastrar quantos imóveis no CRM imobplace?</summary>
+                        <p>A quantidade de imóveis aceitos no CRM é definida no pacote contratado. Nossos pacotes vão de CRM para 50 imóveis com 10 anúncios grátis em cada portal até CRM para 1000 imóveis com 200 anúncios grátis em cada portal.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Eu vou receber todas as leads através do meu CRM?</summary>
+                        <p>Contatos feitos através do nosso telefone serão redirecionados para o telefone cadastrado por você. <br> <br>
+                            Contatos feitos através do nosso Whatsapp serão redirecionados para o Whataspp do número cadastrado. <br> <br>
+                            Contatos feitos através do botão de interesse dos portais ou através do seu site chegarão na aba de leads do seu CRM.
+                            </p>
+                    </details>
+                </div>
+
+                <div class="detailsWrapper">
+                    <h2>rede de corretores parceiros</h2>
+
+                    <details>
+                        <summary>Qual é a taxa de gestão de parcerias cobrada pela Imobplace?</summary>
+                        <p>Zero! As comissões são 100% divididas entre corretores envolvidos na negociação.</p>
+                    </details>
+
+                    <details>
+                        <summary>Qual a taxa sobre as vendas feitas através de parcerias?</summary>
+                        <p>Zero! As comissões são 100% divididas entre corretores envolvidos na negociação.</p>
+                    </details>
+        
+                    <details>
+                        <summary>As transações financeiras são feitas pela Imobplace?</summary>
+                        <p>Não. Todas as negociações e transações financeiras são feitas pelos corretores envolvidos na negociação e seus clientes.</p>
+                    </details>
+        
+                    <details>
+                        <summary>A Imobplace paga salário para os corretores parceiros?</summary>
+                        <p>Não. Não existe nenhum vínculo empregatício entre a Imobplace e os corretores. Todos os corretores são livres para trabalhar quando e onde quiserem.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Como faço para entrar em contato com outro corretor parceiro?</summary>
+                        <p>O imóvel sempre tem atrelado a ele o perfil do corretor captador. Lá você encontrará telefone, email e endereço profissional do corretor parceiro responsável pela captação do imóvel.</p>
+                    </details>
+        
+                </div>
+
+                <div class="detailsWrapper" id="ParceiroDoUrso">
+                    <h2>Parceiro do urso</h2>
+                    <details>
+                        <summary>Quanto custa para me tornar um Parceiro do Urso? </summary>
+                        <p>A contratação no modelo Parceiro do Urso não gera nenhum custo adicional sobre os pacotes tradicionais.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Quais são as regras da parceria no modelo Parceiro do Urso?</summary>
+                        <p>Ao contratar seu pacote como Parceiro do Urso, seu novo gestor de contas entrará em contato com você para explicar todos os detalhes desta parceria e fazer uma jornada completa de aluguel com você. <br> Caso você mude de ideia quanto a parceria ao final da apresentação, seu cadastro volta imediatamente para o modelo de parceria tradicional.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Terei algum acompanhamento durante os aluguéis?</summary>
+                        <p>Ao se tornar um Parceiro do Urso você é designado a um gestor de contas que ficará responsável pelo seu atendimento prioritário e seus aluguéis.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Posso negociar imóveis de outros parceiros Imobplace com as vantagens de Parceiro do Urso?</summary>
+                        <p>Você pode negociar qualquer imóvel disponível na rede de parcerias. Entretanto, os benefícios deste modelo de negócios se aplicam apenas aos imóveis marcados como Imóvel Parceiro do Urso. Nesse caso, a taxa de administração será dividida entre os corretores envolvidos da maneira definida no contrato. </p>
+                    </details>
+        
+                    <details>
+                        <summary>Meu site e CRM são grátis nesse modelo?</summary>
+                        <p>A partir do seu 4º aluguel seu CRM e site Imobplace passam a ser gratuitos. Você terá mais 6 meses para fazer mais pelo menos 4 contratos de aluguel para manter essa condição.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Eu não entendo nada sobre aluguéis. Posso ser um Parceiro do Urso assim mesmo?</summary>
+                        <p>Claro! Na sua área do cliente você encontrará várias videoaulas sobre o processo de aluguel, um passo a passo para utilizar o modelo Parceiro do Urso, acesso às ferramentas utilizadas e material para captação de novos imóveis e clientes. Além disso, você será designado a um gestor de contas que ficará responsável pelo seu atendimento prioritário e seus aluguéis.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Como a Imobplace garante o aluguel com pagamento em dia?</summary>
+                        <p>Os aluguéis no modelo Parceiro do Urso devem ser feitos sem fiador, usando seguro fiança. Assim, nossos parceiros do setor bancário garantem o pagamento do aluguel independente da inadimplência. <br> O pagamento em dia é garantido pelo Fundo Imobiliário Imobplace, que faz o acerto com o proprietário todo dia 10 e com o corretor todo dia 20 até o final do contrato.</p>
+                    </details>
+                </div>
+    
+                <button class="primaryButton2"><a href="#">Conheça nossos pacotes</a></button>
+                <img src="/Images/Site/Contato/EnfeiteDeTela.svg" alt="Bolinhas" id="Bolinhas">
+                <!--Revisar caminho da imagem-->
+            </section>
+    </main>
+
+    <footer>
+        <section class="contact">
+            <!--CSS do contact em framework>Footer>Contato-->
+                <h2>Contato</h2>
+                <p>Ficou com alguma dúvida ou quer saber mais sobre a empresa? Envie sua mensagem e responderemos o mais rápido possível!</p>
+    
+                <form action="" id="Contato">
+                    <fieldset form="Contato" name="inputsContato">
+                        <label for="Nome">Nome</label>
+                        <input type="text" id="Nome" placeholder="Nome" form="Contato" name="Nome" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" placeholder="Email" form="Contato" name="Email" required title="É obrigatório preencher todos os campos para o envio da mensagem"title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Telefone">Telefone</label>
+                        <input type="tel" id="Telefone" placeholder="Telefone" form="Contato" name="Telefone" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Assunto">Assunto</label>
+                        <input type="text" list="AssuntoContato" id="Assunto" placeholder="Assunto" form="Contato" name="Contato" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Mensagem"></label>
+                        <textarea name="Mensagem" id="Mensagem" placeholder="Mensagem" cols="20" rows="10" form="Contato" required title="É obrigatório preencher todos os campos para o envio da mensagem"></textarea>
+        
+                    <button type="submit" id="EnviarButton" form="Contato" name="Enviar" value="Enviar">Enviar</button>
+                    </fieldset>
+                </form>
+    
+                <datalist id="AssuntoContato" name="AssuntoContato">
+                    <option>Dúvida</option>
+                    <option>Sugestão</option>
+                    <option>Reclamação</option>
+                </datalist>
+
+                <img src="/Images/Site/Footer/mascoteContatoDesktop.png" alt="Mascote fazendo sinal de joia." class="mascotContatoDesktop">
+            </section>
+
+        <section class="footer">
+            <div id="footerTextContainer">
+                <div class="logoAndLegal">
+                    <div id="logoFooterContainer">
+                        <img src="/Images/Site/Footer/LogoUrsoBranca.svg" alt="Logo Urso Branca">
+                        <!--Revisar caminho da imagem-->
+                    </div>
+                    <p id="copyright">© 2022  imobplace &emsp; <small>CNPJ: 43.886.546./0001-02</small> <br> <small>CRECI/PJ-MG: 7197 &emsp; IM/BH: 1.342.874/001-6</small></p>
+                </div>
+    
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="/Paginas/Pricing.html">Planos</a></li>
+                        <li><a href="/Paginas/FaqPage.html">Perguntas Frequentes</a></li>
+                        <li><a href="/Paginas/termosDeAdesao.html">Termos de adesão</a></li>
+                        <li><a href="/Paginas/Cookies.html">Cookies</a></li>
+                        <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                    </ul>
+                </div>
+
+                <div id="RightSideDesktop">
+                    <div class="footerNavDesktop">
+                        <li><a href="/Paginas/Pricing.html">Planos</a></li>
+                        <li><a href="/Paginas/FaqPage.html">Perguntas Frequentes</a></li>
+                        <li><a href="/Paginas/termosDeAdesao.html">Termos de adesão</a></li>
+                        <li><a href="/Paginas/Cookies.html">Cookies</a></li>
+                    </div>
+        
+                    <div class="SocialMediaContainer">
+                        <a href="https://www.facebook.com/Imobplace"><img src="/Images/Site/Footer/Facebook.svg" class="socialMedia" alt="Logo Facebook"></a>
+                        <a href="https://instagram.com/imobplace_?igshid=YmMyMTA2M2Y="><img src="/Images/Site/Footer/Instagram.svg" class="socialMedia" alt="Logo Instagram"></a>
+                        <a href="https://www.linkedin.com/company/imobplace/"><img src="/Images/Site/Footer/LinkedIn.svg" class="socialMedia" alt="Logo LinkedIn"></a>
+                        <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                    </div>
+                </div>
+            </div>
+
+            <img src="/Images/Site/Footer/MascoteFooter.svg" alt="Mascote fazendo sinal de joia." id="mascoteFooter">
+        </section>
+    </footer>
+    </div>
+</body>
+</html>

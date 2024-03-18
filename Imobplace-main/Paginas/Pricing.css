@@ -1,0 +1,1005 @@
+
+/*MAIN BANNER*/
+#mainBanner{
+    background-image: url(/Images/Site/Pricing/mainBanner.png);
+}
+
+#bolinhasGeral{
+    display: none;
+}
+
+
+/*PRICING*/
+/*Tela de cards*/
+#Pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: white;
+    gap: 3.5rem;
+    padding: 3rem 0;
+}
+
+/*Detalhes do plano*/
+.cardWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Cards*/
+.pricingCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    position: relative;
+    max-width: 88vw;
+    border: 1px solid rgb(81, 81, 81);
+    box-shadow: 0px 4px 6px 1px rgba(68, 67, 67, 0.3);
+    border-radius: 20px;
+    padding: 1.5rem 0 2.7rem;
+}
+
+.pricingCards > img{
+    width: 10.2rem;
+    position: absolute;
+    top: -9%;
+    left: -2%;
+}
+
+.titleWrapper{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#Pricing h1{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    width: 60%;
+
+    padding-top:.5rem;
+}
+
+.mainText{
+    text-align: center;
+    padding: 2.5rem 1.5rem 2rem;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: rgb(81, 81, 81);
+}
+
+.SelectPricing > p{
+    font-size: 1.1rem;
+}
+
+select{
+    width: 63vw;
+    height: 5vh;
+    border-radius: 100px;
+    border: .8px solid rgba(143, 143, 143, 1);
+    font-size: 1rem;
+    color: black;
+    background-color: rgb(243, 243, 243);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.pricingCards h5{  
+    text-align: center;
+    padding-top: .5rem;
+    color: rgb(11, 64, 211);
+    font-size: .8rem;
+    margin: 0 0 1.5rem;
+}
+
+h5 > span{
+    color: rgb(185, 28, 28);
+    text-decoration:line-through ;
+}
+
+.planDetails{
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(114, 113, 113);
+    padding-top: 3rem;
+}
+
+
+/*Promo - sale*/
+.promo{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(243, 243, 243, .3), 30%, rgb(243, 243, 243), 70%, rgba(243, 243, 243, .3));
+    width: 100%;
+    padding: .5rem 0;
+    color: rgb(185, 28, 28);
+    font-weight: bold;
+}
+
+.de-por{
+    display: flex;
+    align-items: flex-end;
+    color: rgba(81, 81, 81, 1);
+    font-size: .9rem;
+    padding-right: .2rem;
+}
+
+.RS-promo{
+    display: flex;
+    align-items: flex-end;
+    font-size: .8rem;
+}
+
+.priceNumber-promo{
+    line-height: 2.1rem;
+    font-size: 2.7rem;
+    padding: 0 .2rem 0 0;
+    text-decoration:line-through ;
+}
+
+.cents-promo{
+    display: flex;
+    align-items: flex-start;
+    font-size: .8rem;
+    line-height: .8rem;
+
+    padding-top: .2rem;
+}
+
+.fidelity-promo{
+    font-size: .55rem;
+    font-weight: lighter;
+    padding-left: .3rem;
+}
+
+.fakeDivCard2{
+    display: none;
+    background-color: black;
+    height: 9vh;
+}
+
+/*Button*/
+#Pricing button{
+    position: absolute;
+    bottom: -16%;
+    padding: .6rem 2.8rem 0.5rem;
+}
+
+.pricingButtonWrapper{
+    display: flex;
+}
+
+.RS{
+    display: flex;
+    align-items: flex-end;
+    font-size: 1rem;
+}
+
+.priceNumber{
+    line-height: 2.5rem;
+    font-size: 2.8rem;
+    padding: 0 .2rem 0 0;
+}
+
+.cents{
+    display: flex;
+    align-items: flex-start;
+    font-size: .9rem;
+    line-height: .9rem;
+
+    padding-top: .2rem;
+}
+
+.fidelity{
+    font-size: .55rem;
+    font-weight: lighter;
+    padding-left: .3rem;
+}
+
+
+/*Card2*/
+#card2 h1{
+    padding: 1.5rem 0 1rem;
+}
+
+
+/*Card 3*/
+#card3 button{
+    background: linear-gradient(18deg, rgb(17, 78, 247), 50%, rgb(2, 212, 225));
+}
+
+/*RECURSOS - PLANOS*/
+#PlanosMobile{
+    display: block;
+}
+
+#PlanosDesktop{
+    display: none;
+}
+
+#Planos{
+    background-color: rgb(243, 243, 243);
+    height: fit-content;
+    position: relative;
+}
+
+#Planos h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: rgb(143, 143, 143);
+
+    padding: 2rem 2.5rem 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#Planos h2{
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+
+    color: rgb(163, 187, 255);
+
+    margin-bottom: .6rem;
+    padding: 0 1rem;
+}
+
+#Planos span{
+    display: flex;
+    flex-direction: column;
+    
+    border-bottom: 2px dashed rgb(163, 187, 255);
+
+    margin: 0 1rem;
+}
+
+#tracinhos{
+    display: none;
+}
+
+.buttonWrapper{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.primaryButton{
+    margin: 0;
+    background-color: rgb(143, 143, 143);
+}
+
+/*Promo legal*/
+#promoLegal{
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    padding: 0 .5rem;
+}
+
+#promoLegal small{
+    text-align: end;
+    font-size: .75rem;
+    color: rgba(143, 143, 143, 1);
+}
+
+/*recurso*/
+#recursosWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 3rem 4rem 1.5rem;
+    position: relative;
+
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.recurso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 6rem;
+    min-width: 4rem;
+
+    margin-bottom: 2rem;
+}
+
+.recurso img{
+    max-width: 20vw;
+    max-height: 8vh;
+}
+
+.recurso h3{
+    font-size: 1rem;
+    color: rgb(143, 143, 143);
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: .8rem;
+}
+
+#recurso5{
+    width: 100%;
+}
+
+#enfeiteDeTelaRecursos{
+    display: none;
+}
+
+/*CRM + site*/
+#CRMeSite{
+    background-color: white;
+    padding-top: 2rem;
+}
+
+/*Combo*/
+#Combo{
+    background-color: rgb(0, 146, 155);
+
+    padding: 2rem 0 0;
+}
+
+#Combo h2{
+    color: rgb(243, 243, 243);
+}
+
+#Combo span{
+    border-bottom: 2px dashed rgb(243, 243, 243);
+}
+
+#todasAsVantagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(243, 243, 243);
+    border-radius: 15px;
+
+    padding: 2rem 1rem;
+    margin: 2rem 2rem 0;
+}
+
+#todasAsVantagens img{
+    width: 4rem;
+    margin-bottom: .5rem;
+}
+
+#todasAsVantagens h3{
+    color: rgb(0, 146, 155);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#Combo #recursosWrapper h3{
+    color: rgb(243, 243, 243);
+}
+
+#Combo .primaryButton{
+    margin: 0;
+    background-color: rgb(243, 243, 243);
+}
+
+#Combo .primaryButton a{
+    color: rgb(0, 146, 155);
+}
+
+#Combo .primaryButton:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+/*modal*/
+.modal{
+    position: absolute;
+    display: none;
+    max-height: 40vh;
+    width: 90vw;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: rgba(243, 243, 243, 0.96);
+    box-shadow: -1px 5px 5px 0 rgba(68, 67, 67, 0.7);
+
+    padding: .5rem;
+
+    z-index: 0;
+}
+
+.modalHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed rgb(163, 187, 255);
+
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.modalHeader h5{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: rgb(143, 143, 143);
+
+    padding: .5rem 0;
+}
+
+.modalHeader img{
+    max-height: 2.25rem;
+}
+
+.modal p{
+    text-align:center;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin-top: .6rem;
+    padding: 0 1rem .5rem;
+}
+
+
+.modal{
+    left: 5%;
+}
+
+/*Modais CRM + anúncios*/
+#modal0, #modal1{
+    top: 19%;
+}
+
+#modal2, #modal3{
+    top: 39%;
+}
+
+#modal4, #modal5{
+    top: 58%;
+}
+
+#modal6, #modal7{
+    top: 77%;
+}
+
+#modal8, #modal9{
+    top: 62%;
+} 
+
+/*Modais CRM + site*/
+#modalSite0{
+    max-height: 48vh;
+}
+
+#modalSite0, #modalSite1{
+    top: 24%;
+}
+
+#modalSite2, #modalSite3{
+    top: 48%;
+}
+
+#modalSite4, #modalSite5{
+    top: 72%;
+}
+
+#modalSite6, #modalSite7{
+    top: 54%;
+}
+
+
+/*Modais Combo*/
+#modalCombo0{
+    max-height: 75vh;
+}
+
+#modalCombo0, #modalCombo1{
+    top: 16%;
+}
+
+#modalCombo2, #modalCombo3{
+    top: 33%;
+}
+
+#modalCombo4, #modalCombo5{
+    top: 49%;
+}
+
+#modalCombo6, #modalCombo7{
+    top: 65%;
+}
+
+#modalCombo8, #modalCombo9{
+    top: 81%;
+} 
+
+#modalCombo10{
+    top: 70%;
+}
+
+
+#modalCombo1{
+    max-height: 50vh;
+    padding-bottom: 1.5rem;
+}
+
+#modalCombo1 ul{
+    padding-top: .5rem;
+    padding-left: 1.5rem;
+}
+
+
+/*modal animation*/
+.recurso:hover + .modal{
+    display: block;
+}
+
+
+
+/*TEXTO DE APOIO*/
+#textoDeApoio{
+    padding-bottom: 2rem;
+}
+
+#textoDeApoio img{
+   padding: 0 1rem;
+}
+
+
+/*CONTATO*/
+.contact{
+    padding-top: 3rem;
+}
+
+
+
+@media (min-width: 700px){
+    #mainBanner{
+        background-image: url(/Images/Site/Pricing/mainBannerDesktop.png);
+    }
+
+    #bolinhasGeral{
+        display:inherit ;
+    }
+
+    /*PRICING*/
+    /*Tela de cards*/
+    #Pricing{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+        gap: 2.4rem;
+        padding: 5rem 0 3rem;
+    }
+
+    /*Cards*/
+    .pricingCards{
+        justify-content:center;
+        gap: 1.1rem;
+
+        max-width: 29vw;
+        min-height: 60vh;
+        max-height: 65vh;
+        height: 50vh;
+        border: 1px solid rgb(81, 81, 81);
+        box-shadow: 0px 4px 8px 1px rgba(68, 67, 67, 0.3);
+        border-radius: 20px;
+        padding: 2rem 0 1rem;
+    }
+
+    .pricingCards > img{
+        width: 7.6rem;
+        position: absolute;
+        top: -13%;
+        left: 6%;
+    }
+
+    .titleWrapper{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #Pricing h1{
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+        color: rgb(102, 102, 102);
+        text-align: center;
+        width: 100%;
+
+        padding: 1.1rem 0 0;
+    }
+
+    .mainText{
+        text-align: center;
+        padding: 0rem 1.5rem;
+        font-size: 1.16rem;
+        line-height: 1.7rem;
+        color: rgb(81, 81, 81);
+    }
+
+    .SelectPricing > p{
+        font-size: 1.1rem;
+    }
+
+    select{
+        width: fit-content;
+        min-width: 21vw;
+        height: 7vh;
+        border-radius: 100px;
+        border: .8px solid rgb(153, 153, 153);
+        font-size: 1rem;
+        height: 2.2rem;
+        color: black;
+        background-color: rgb(243, 243, 243);
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    .pricingCards h5{  
+        text-align: start;
+        padding-top: .4rem;
+        padding-left: .2rem;
+        color: rgb(11, 64, 211);
+        font-size: .7rem;
+        margin: 0;
+    }
+
+    /*Promo - sale*/
+    .promo{
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(90deg, rgba(243, 243, 243, .3), 20%, rgb(243, 243, 243), 80%, rgba(243, 243, 243, .3));
+        width: 100%;
+        padding: .5rem 0;
+        color: rgb(185, 28, 28);
+        font-weight: bold;
+    }
+
+    .de-por{
+        display: flex;
+        align-items: flex-end;
+        color: rgba(81, 81, 81, 1);
+        font-size: .9rem;
+        padding-right: .2rem;
+    }
+
+    .RS-promo{
+        display: flex;
+        align-items: flex-end;
+        font-size: .8rem;
+    }
+
+    .priceNumber-promo{
+        line-height: 2.1rem;
+        font-size: 2.7rem;
+        padding: 0 .2rem 0 0;
+        text-decoration:line-through ;
+    }
+
+    .cents-promo{
+        display: flex;
+        align-items: flex-start;
+        font-size: .8rem;
+        line-height: .8rem;
+
+        padding-top: .2rem;
+    }
+
+    .fidelity-promo{
+        font-size: .55rem;
+        font-weight: lighter;
+        padding-left: .3rem;
+    }
+
+
+    /*Button*/
+    #Pricing button{
+        position: absolute;
+        bottom: -16%;
+        padding: .5rem 2.2rem 0.4rem;
+    }
+    
+    .pricingButtonWrapper{
+        display: flex;
+    }
+    
+    .RS{
+        display: flex;
+        align-items: flex-end;
+        font-size: 1rem;
+    }
+    
+    .priceNumber{
+        line-height: 2.3rem;
+        font-size: 2.6rem;
+        padding: 0 0 0 0;
+    }
+    
+    .cents{
+        display: flex;
+        align-items: flex-start;
+        font-weight: normal;
+        font-size: .8rem;
+        line-height: .6rem;
+    }
+    
+    .fidelity{
+        font-size: .5rem;
+        font-weight: normal;
+    }
+
+    .pricingCards h2{
+        padding: 0;
+    }
+
+    .planDetails{
+        font-size: .8rem;
+        text-decoration: underline;
+        font-weight: bold;
+        color: rgb(114, 113, 113);
+        padding-top: 2.5rem;
+    }
+
+
+    /*Card2*/
+    #card2 h1{
+        padding: 1.1rem 0 0;
+    }
+
+    .fakeDivCard2{
+        display: block;
+    }
+
+    /*Card 3*/
+    #card3 button{
+        background: linear-gradient(18deg, rgb(17, 78, 247), 50%, rgb(2, 212, 225));
+    }
+
+
+
+    /*Detalhamento dos planos*/
+    #PlanosMobile{
+        display: none;
+    }
+
+    #PlanosDesktop{
+        display: block;
+    }
+
+    #Pricing h4{
+        display: none;
+    }
+
+    #todasAsVantagens{
+        margin: 2rem 5rem 0;
+    }
+
+
+    #Planos h1{
+        padding: 3rem 1rem 0;
+        margin-bottom: 1.5rem;
+
+        font-size: 1.50rem;
+    }
+
+    #planoSpan{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: flex-end;
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    #Planos h2{
+        font-size: 1.15rem;
+        font-weight: bolder;
+    
+        margin-bottom: 0;
+        padding: 0 0 0 1rem;
+    }
+
+    #tracinhos{
+        display: block;
+        height: 2px;
+        width: 70vw;
+        border-top: 2px dashed rgb(163, 187, 255);
+
+        margin-bottom: .3rem;
+    }
+
+    #recursosWrapper{
+        justify-content: center;
+        padding: 3rem 8rem 3rem 11.5rem;
+    
+        column-gap: 4rem;
+        row-gap: 2rem;
+        justify-content: flex-start;
+    }
+
+        #Combo #recursosWrapper{
+            padding: 3rem 8rem 1rem 11.5rem;
+        }
+
+    .recurso{
+        max-width: 9.5rem;
+        min-width: 9.5rem;
+    }
+
+    .recurso h3{
+        font-size: 1.15rem;
+    }
+
+    #recursosWrapper img{
+        width: 3.5vw;
+    }
+
+    #enfeiteDeTelaRecursos{
+        display: block;
+        position: absolute;
+        width: 11%;
+        bottom: -8%;
+        right: 1%;
+
+    }
+
+
+    /*modal*/
+.modal{
+    max-height: 50vh;
+    width: 30vw;
+    border: 1px solid gray;
+    padding: .5rem;
+}
+
+.modalHeader{
+    padding: 0 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.modalHeader h5{
+    font-size: 1.3rem;
+    padding: .5rem 0;
+}
+
+.modalHeader img{
+    max-height: 2.25rem;
+}
+
+.modal p{
+    text-align:center;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin-top: .6rem;
+    padding: 0 1rem .5rem;
+}
+
+
+/*Modais CRM + anúncios*/
+#modal0, #modal1, #modal2, #modal3, #modal4{
+    top: 5%;
+}
+
+#modal5, #modal6, #modal7, #modal8, #modal9{
+    top: 45%;
+}
+
+#modal0, #modal5{
+    left: 25%;
+}
+
+#modal1, #modal6{
+    left: 42%;
+}
+
+#modal2, #modal7{
+    left: 58%;
+}
+
+#modal3, #modal8{
+    left: 30.5%;
+}
+
+#modal4,#modal9{
+    left: 47%;
+}
+
+
+/*Modais CRM + site*/
+#modalSite0, #modalSite1, #modalSite2, #modalSite3, #modalSite4{
+    top: 5%;
+}
+
+#modalSite5, #modalSite6, #modalSite7{
+    top: 45%;
+}
+
+#modalSite0, #modalSite5{
+    left: 25%;
+}
+
+#modalSite1, #modalSite6{
+    left: 42%;
+}
+
+#modalSite2, #modalSite7{
+    left: 58.5%;
+}
+
+#modalSite3{
+    left: 30.5%;
+}
+
+#modalSite4{
+    left: 46%;
+}
+
+
+
+/*Modais Combo*/
+#modalCombo0{
+    max-height: 80vh;
+}
+
+#modalCombo0, #modalCombo1, #modalCombo2, #modalCombo3, #modalCombo4{
+    top: 3%;
+}
+
+#modalCombo5, #modalCombo6, #modalCombo7, #modalCombo8, #modalCombo9{
+    top: 35%;
+}
+
+#modalCombo10{
+    top: 67%;
+}
+
+#modalCombo0, #modalCombo5, #modalCombo10{
+    left: 25%;
+}
+
+#modalCombo1, #modalCombo6{
+    left: 42.5%;
+}
+
+#modalCombo2, #modalCombo7{
+    left: 58%;
+}
+
+#modalCombo3,#modalCombo8{
+    left: 30%;
+}
+
+#modalCombo4, #modalCombo9{
+    left: 46%;
+}
+
+
+#modalCombo1 ul{
+    padding-top: .5rem;
+    padding-left: 2.5rem;
+}
+
+
+    /*texto de apoio*/
+    #textoDeApoio{
+        padding-top: 2rem;
+    }
+
+    #textoDeApoio img{
+        width: 41vw;
+    }
+}

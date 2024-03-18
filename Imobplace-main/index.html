@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <meta name="author" content="Matheus Rodela">
+    <meta name="description" content="Corretor de imóveis, garanta agora seu CRM, site imobiliário personalizado e anúncios nos 8 maiores portais do país em um só lugar.">
+    <meta name="theme-color" content="rgb(17, 78, 247)">
+    
+    <link rel="canonical" href="http://imobplace.com.br"/>
+    <meta name=”robots” content=”index, follow”>
+    
+    <meta property="og:title" content="Imobplace soluções imobiliárias." />
+    <meta property="og:url" content="https://imobplace.com.br/index.html" />
+    <meta property="og:description" content="CRM, site imobiliário e anúncios nos 8 maiores portais do país." />
+    <meta property="og:image" content="/PositivaHorizontal1.png" />
+    <meta property="og:type" content="article" />
+    <title>Imobplace - CRM, site e anúncios imobiliários</title>
+
+    <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!--CSS - Nav bar-->
+        <link rel="stylesheet" href="NavBar/NavBar.css">
+        <link rel="stylesheet" href="../NavBar/HamburgerAnimation/HamburgerAnimation.css">
+
+    <!--CSS - Framework -> Main; Contato; Footer; Components-->
+        <link rel="stylesheet" href="framework/Footer/Contato.css">
+        <link rel="stylesheet" href="framework/Footer/Footer.css">
+        <link rel="stylesheet" href="framework/Footer/Faq.css">
+        <link rel="stylesheet" href="framework/Page/Main.css">
+        <link rel="stylesheet" href="framework/Components/components.css">
+
+        <!--CSS - Current page-->
+        <link rel="stylesheet" href="HomePage.css">
+        <link rel="stylesheet" href="HomePageDesktop.css">
+        
+    <!--JS - don't forget the 'defer property'-->
+        <script src="NavBar/NavBar.js" defer></script>
+        <script src="NavBar/HamburgerAnimation/HamburgerAnimation.js" defer></script>
+        <script src="/NavBar/NavScroll.js" defer></script>
+        <script src="/framework/page.js" defer></script>
+    <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="Images/Site/favicon.ico">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header>
+            <!--CSS do nav em NavBar>NavBar-->
+                    <nav class="NavBar" id="navbar">
+                        <div class="Menu"  id="ToggleButton">
+                            <div class="menu-btn">
+                                <div class="menu-btn__burger"></div>
+                            </div>
+                        </div>
+        
+                        <div id="logoContainer">
+                            <a href="index.html">
+                                <img src="../Images/Site/Horizontalimobplace.svg" alt="Logomarca" id="PrimaryIcon">
+                            </a>
+                        </div>
+            
+                        <ul class="NavList" id="NaviList">
+                            <a href="index.html"><li class="ListItem" id="Focus"></li></a>
+                            <a href="/Paginas/Pricing.html"><li class="ListItem">Preços</li></a>
+                            <a href="/Paginas/Divulgacao.html"><li class="ListItem">Divulgação de imóveis</li></a>
+                            <a href="/Paginas/Organizacao.html"><li class="ListItem">CRM e gestão de contratos</li></a>
+                            <a href="/Paginas/Rede.html"><li class="ListItem">Rede de corretores parceiros</li></a>
+                        </ul>
+            
+                        <ul class="NavListDesktop">
+                            <a href="/Paginas/Pricing.html"><li class="ListItemDesktop"><button>Conheça Nossos Pacotes</button></li></a>
+                        </ul>
+                    </nav>
+        </header>
+        
+            <main>
+                <!--CSS body; main; article; section. em framework>Page>Main -->
+                <article id="mainBanner">
+                    <div class="BannerTextWrapper">
+                        <section>
+                            <h1>As maiores vantagens de uma rede sem perder sua identidade</h1>
+                            <p>Organize seus atendimentos, divulgue nos maiores portais do país, faça parcerias com outros corretores e tenha um site personalizado.</p>
+                        </section>
+    
+                        <button class="secondaryButton" id="DesktopButton"><a href="#Vantagens">Saiba mais</a></button>
+                    </div>
+        
+                    <section class="imgWrapper">
+                        <img src="/Images/Site/Home/Banner/MainImageHomeBanner.webp" alt="Mulher sorrindo com celular na mão." id="Mobile">
+                        <img src="/Images/Site/Home/Desktop/Group641.webp" alt="Mulher sorrindo com celular na mão." id="Desktop">
+                    </section>
+        
+                    <button class="secondaryButton"><a href="#Vantagens"> Saiba mais</a></button>
+                </article>
+        
+                <article id="LogosPortais">
+                    <div class="logosContainer">
+                        <img src="/Images/Site/Home/LogosPortais/casa-mineira.png" alt="logo-casa-mineira" class="portais" loading="lazy">
+                        <img src="/Images/Site/Home/LogosPortais/OLX.png" alt="logo-OLX" class="portais" loading="lazy">
+                        <img src="/Images/Site/Home/LogosPortais/viva-real.png" alt="logo-viva-real" class="portais" loading="lazy">
+                        <img src="/Images/Site/Home/LogosPortais/zap-imoveis.png" alt="logo-zap-imoveis" class="portais" loading="lazy">
+                        <img src="/Images/Site/Home/LogosPortais/imovelweb.png" alt="logo-imovelweb" class="portais" loading="lazy">
+                        <img src="/Images/Site/Home/LogosPortais/lugar-certo.png" alt="logo-lugar-certo" class="portais" loading="lazy">
+                        <img src="/Images/Site/Home/LogosPortais/campainha.png" alt="logo-campainha" class="portais" loading="lazy">
+                        <img src="/Images/Site/Home/LogosPortais/mercado-livre.png" alt="logo-mercado-livre" class="portais" loading="lazy">
+                    </div>
+                </article>
+        
+                <article id="Vantagens">
+                    <img src="/Images/Site/Home/Vantagens/Group 632.png" alt="Mulher com blusa social e óculos sorrindo" id="imageVantagens" loading="lazy">
+                    <img src="/Images/Site/Home/Vantagens/Group 632.png" alt="Mulher com blusa social e óculos sorrindo" id="imageVantagensDesktop" loading="lazy">
+
+                    <div class="cardsVantagensWrapper">
+                        <section class="cardsVantagens">
+                            <img src="/Images/Site/Home/Vantagens/IconePC.svg" alt="Icone computador">
+                            <h2>FORTALEÇA SUA IDENTIDADE</h2>
+                            <h1>SEUS IMÓVEIS EM 8 PORTAIS</h1>
+                            <p>Publique nos maiores portais imobiliários do país e aumente significativamente a visibilidade dos seus melhores imóveis.
+                            </p>
+                        </section>
+    
+                        <section class="cardsVantagens">
+                            <img src="/Images/Site/Home/Vantagens/IconeCRM.svg" alt="Icone computador">
+                            <h2>NÃO PERCA SEUS CLIENTES</h2>
+                            <h1>GESTÃO DE QUALIDADE</h1>
+                            <p>No nosso CRM você organiza seu funil de atendimento, recebe todas as suas leads no mesmo lugar e faz toda a gestão financeira do seu negócio.
+                            </p>
+                        </section>
+    
+                        <section class="cardsVantagens">
+                            <img src="/Images/Site/Home/Vantagens/iconeDinheiro.svg" alt="Icone computador">
+                            <h2>AUMENTE AS FORMAS DE GANHO</h2>
+                            <h1>MAIS OPORTUNIDADES DE NEGÓCIO</h1>
+                            <p>Você escolhe os imóveis que quer compartilhar na rede e se conecta à corretores de todo o Brasil para encontrar clientes para seus imóveis ou imóveis para seus clientes.
+                            </p>
+                        </section>
+                    </div>
+                </article>
+
+                <article id="video">
+                    <iframe 
+                    src="https://www.youtube.com/embed/jtLsa8LpzyE" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+                </article>
+
+                <article id="saibaMais">
+                    <h1 class="saibaMaisTitle">COMO TE  AJUDAREMOS EM SUA JORNADA</h1>
+
+                   <div class="cardsWrapper">
+                    <section class="cardsSaibaMais">
+                        <img src="/Images/Site/Home/SaibaMais/Group 637.png" alt="Desenho de um computador com uma seta na tela">
+                        <span></span>
+                        <h1>DIVULGAÇÃO</h1>
+                        <p>Seus imóveis nos 8 maiores portais imobiliários do país e no CRM de corretores parceiros, aumentando exponencialmente suas chances de negócio.</p>
+                        <button class="secondaryButton"><a href="/Paginas/Divulgacao.html">Saiba Mais</a></button>
+                    </section>
+
+                    <section class="cardsSaibaMais">
+                        <img src="/Images/Site/Home/SaibaMais/Group 636.png" alt="Desenho de 3 bonequinhos unidos">
+                        <span></span>
+                        <h1>ORGANIZAÇÃO</h1>
+                        <p>Utilizando a tecnologia mais atualizada do mercado, o CRM centraliza informações vitais para economizar seu tempo e organizar seus atendimentos. </p>
+                        <button class="secondaryButton"><a href="/Paginas/Organizacao.html">Saiba Mais</a></button>
+                    </section>
+
+                    <section class="cardsSaibaMais">
+                        <img src="/Images/Site/Home/SaibaMais/Group 638.png" alt="Imagem de 2 bonequinhos e um sinal de mais">
+                        <span></span>
+                        <h1>REDE</h1>
+                        <p>Amplie sua carteira, encontre corretores com clientes para seus imóveis, ganhe dinheiro com suas captações e crie  muito mais oportunidades de negócios!</p>
+                        <button class="secondaryButton"><a href="/Paginas/Rede.html">Saiba Mais</a></button>
+                    </section>
+                   </div>
+                </article>
+
+                <article id="SejaParceiroDoUrso">
+                    <h1>SE TORNE PARCEIRO DO URSO</h1>
+                    <p>Crie sua carteira de aluguéis em parceria com a Imobplace.</p>
+
+                    <div class="cardParceiroDoUrsoWrapper">
+                        <section class="cardParceiroDoUrso">
+                            <img src="/Images/Site/Home/ParceiroDoUrso/Group 698.svg" alt="Desenho de um cifrão e uma estrela">
+                            <h2>Lucre até <span>4x</span> mais com seus aluguéis</h2>
+                        </section>
+    
+                        <section class="cardParceiroDoUrso">
+                            <img src="/Images/Site/Home/ParceiroDoUrso/inventory_black_24dp 1.svg" alt="Desenho de uma prancheta e um simbolo de 'check'.">
+                            <h2>Se livre de toda a gestão jurídica e financeira do aluguel</h2>
+                        </section>
+    
+                        <section class="cardParceiroDoUrso">
+                            <img src="/Images/Site/Home/ParceiroDoUrso/Group.svg" alt="Imagem de um cubo tridimensional">
+                            <h2>Anuncie grátis seus imóveis para aluguel em 10 portais </h2>
+                        </section>
+    
+                        <section class="cardParceiroDoUrso">
+                            <img src="/Images/Site/Home/ParceiroDoUrso/Group-1.svg" alt="Imagem de um cifrão e um simbolo de 'check'.">
+                            <h2>Receba o aluguel em dia mesmo se o inquilino não pagar.</h2>
+                        </section>
+                    </div>
+
+                    <button><a href="/Páginas/Parceiro do Urso/ParceiroDoUrso.html">SAIBA MAIS</a></button>
+
+                    <img src="/Images/Site/Home/ParceiroDoUrso/Group 559.png" alt="Enfeite de página." id="enfeiteParceiroDoUrsoDesktop">
+                </article>
+        
+                <article id="grafico">
+                    <div id="graficoTextWrapper">
+                        <h1>Você faz negócios e nós cuidamos da parte chata</h1>
+                        <p>Nós centralizamos a gestão do seu dia a dia, divulgamos seus imóveis, geramos parcerias e te auxiliamos na criação de contratos. Tudo isso para que você possa focar toda sua energia em fazer o que você faz melhor, negócios.</p>
+                    </div>
+
+                    <div id="graficoWrapper">
+                        <img src="/Images/Site/Home/Grafico/Diagrama.png" alt="Diagrama explicando o funcionamento do modelo de negócios.">
+                        <img src="/Images/Site/Home/Grafico/Group 706.png" alt="Diagrama explicando o funcionamento do modelo de negócios desktop." id="diagramaDesktop">
+                    </div>
+                </article>
+
+                <article id="depoimentos">
+                    <h1>Corretores que confiam na Imobplace:</h1>
+
+    </div>
+                <div id="scrollWrapper">
+                    <div id="wrapperDepoimentos">
+                        <section class="Depoimento">
+                            <div class="wrapperCorretores">
+                                <img src="/Images/Site/Home/Depoimentos/depoimento1.webp" alt="Foto do corretor responsável pelo depoimento." loading="lazy">
+                                <img src="/Images/Site/Home/Depoimentos/Depoimento1Desktop.webp" alt="Foto do corretor responsável pelo depoimento." loading="lazy" class="DepoimentoDesktop">
+                            </div>
+                            <div class="depoimentosTextWrapper">
+                                <h1>Corretores que confiam na Imobplace:</h1>
+                                <p>"O serviço é inovador e tem grande diferencial, atendendo e cumprindo o que se promete! Estou satisfeito com o serviço prestado, recomento e agradeço a toda equipe da Imobplace pelo empenho e dedicação!"</p>
+                                <h2>Leonardo Medeiros</h2>
+                                <h3>CRECI 75523  |  Corretor imobplace</h3>
+                            </div>
+
+                        </section>
+
+                        <section class="Depoimento">
+                            <div class="wrapperCorretores">
+                                <img src="/Images/Site/Home/Depoimentos/depoimento2.webp" alt="Foto do corretor responsável pelo depoimento." loading="lazy">
+                                <img src="/Images/Site/Home/Depoimentos/depoimento2Desk.webp" alt="Foto do corretor responsável pelo depoimento." loading="lazy" class="DepoimentoDesktop">
+                            </div>
+                            <div class="depoimentosTextWrapper">
+                                <h1>Corretores que confiam na Imobplace:</h1>
+                                <p>"Depois que assinei o Plano de divulgação da Imobplace obtive ótimos resultados. Consegui fechar vendas que caso não tivesse assinado não teria fechado, pois esses clientes nunca chegariam até mim devido a distância geográfica."</p>
+                                <h2>Rogerio Plautino</h2>
+                                <h3>CRECI 32903  |  Corretor imobplace</h3>
+                            </div>
+
+                        </section>
+
+                        <section class="Depoimento">
+                            <div class="wrapperCorretores">
+                                <img src="/Images/Site/Home/Depoimentos/depoimento3.webp" alt="Foto do corretor responsável pelo depoimento." loading="lazy">
+                                <img src="/Images/Site/Home/Depoimentos/depoimento3Desk.webp" alt="Foto do corretor responsável pelo depoimento." loading="lazy" class="DepoimentoDesktop">
+                            </div>
+                            <div class="depoimentosTextWrapper">
+                                <h1>Corretores que confiam na Imobplace:</h1>
+                                <p>"Desde o primeiro contato com a empresa minha experiência foi excepcional. Muita cordialidade e agilidade no atendimento. Superaram minhas expectativas. No primeiro mês já recebi uma lead que comprou 2 imóveis."</p>
+                                <h2>Tiago - The Land Cia Imobiliária</h2>
+                                <h3>CRECI PJ 4343  |  Corretor imobplace</h3>
+                            </div>
+                        </section>
+
+                        <section class="Depoimento">
+                            <div class="wrapperCorretores">
+                                <img src="/Images/Site/Home/Depoimentos/corretorExemplo.webp" alt="Foto do corretor responsável pelo depoimento." loading="lazy">
+                                <img src="/Images/Site/Home/Depoimentos/corretorExemploDesktop.webp" alt="Foto do corretor responsável pelo depoimento." loading="lazy" class="DepoimentoDesktop">
+                            </div>
+                            <div class="depoimentosTextWrapper">
+                                <h1>Corretores que confiam na Imobplace:</h1>
+                                <p>Entre em contato com nosso time de sucesso do cliente e tenha seu comentário exposto no site.</p>
+                                <h2>Seu nome aqui.</h2>
+                                <h3>CRECI 123456789  |  Corretor imobplace</h3>
+                            </div>
+
+                        </section>
+
+                    </div>
+                </div>
+
+                </article>
+
+    <div class="page-wrapper">
+        
+            </main>
+        
+            <footer>
+                <section class="faq">
+                    <!--CSS do faq em framework>Footer>Faq-->
+                    <h2>PERGUNTAS FREQUENTES</h2>
+        
+                    <details>
+                        <summary>A imobplace atua como imobiliária?</summary>
+                        <p>Não! Nós não vendemos nem alugamos por conta própria. Quem conversa com o inquilino e o proprietário é você!</p>
+                    </details>
+        
+                    <details>
+                        <summary>Qual a taxa sobre as vendas feitas através de parcerias?</summary>
+                        <p>Zero! As comissões são 100% divididas entre corretores envolvidos na negociação.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Meu nome não aparece nos portais de anúncios. Como o cliente vai entrar em contato comigo?</summary>
+                        <p>As leads recebidas pelos portais são direcionadas automaticamente para o seu telefone e/ou CRM, de acordo com o modo de recebimento.</p>
+                    </details>
+        
+                    <details>
+                        <summary>É possível transferir os imóveis do meu CRM atual para o Imobplace?</summary>
+                        <p>Não. Para que se enquandrem no nosso rigoroso controle de qualidade,  os anúncios devem ser recriados na nova plataforma. O processo garante uma nota mais alta nos portais e aumenta o número de visualizações do imóvel.</p>
+                    </details>
+        
+                    <details>
+                        <summary>Em quais portais os imóveis são anunciados</summary>
+                        <ol>
+                            <li>OLX</li>
+                            <li>Zap Imóveis</li>
+                            <li>Viva Real</li>
+                            <li>ImovelWeb</li>
+                            <li>Lugar Certo</li>
+                            <li>Mercado Livre</li>
+                            <li>Casa Mineira</li>
+                            <li>Campainha</li>
+                        </ol>
+                    </details>
+        
+                    <h3><a href="/Paginas/FaqPage.html">Ver mais</a></h3>
+        
+                    <button class="secondaryButton"><a href="#">Conheça nossos pacotes</a></button>
+                    <img src="/Images/Site/Contato/EnfeiteDeTela.svg" alt="Bolinhas" id="Bolinhas">
+                    <img src="/Images/Site/Faq/Group 635.png" alt="Enfeite de tela" id="BolinhasDesktop">
+                </section>
+        
+                <section class="contact">
+                <!--CSS do contact em framework>Footer>Contato-->
+                    <h2>Contato</h2>
+                    <p>Ficou com alguma dúvida ou quer saber mais sobre a empresa? Envie sua mensagem e responderemos o mais rápido possível!</p>
+        
+                    <form action="" id="Contato">
+                        <fieldset form="Contato" name="inputsContato">
+                            <label for="Nome">Nome</label>
+                            <input type="text" id="Nome" placeholder="Nome" form="Contato" name="Nome" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+        
+                            <label for="Email">Email</label>
+                            <input type="email" id="Email" placeholder="Email" form="Contato" name="Email" required title="É obrigatório preencher todos os campos para o envio da mensagem"title="É obrigatório preencher todos os campos para o envio da mensagem">
+        
+                            <label for="Telefone">Telefone</label>
+                            <input type="tel" id="Telefone" placeholder="Telefone" form="Contato" name="Telefone" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+        
+                            <label for="Assunto">Assunto</label>
+                            <input type="text" list="AssuntoContato" id="Assunto" placeholder="Assunto" form="Contato" name="Contato" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+        
+                            <label for="Mensagem"></label>
+                            <textarea name="Mensagem" id="Mensagem" placeholder="Mensagem" cols="20" rows="10" form="Contato" required title="É obrigatório preencher todos os campos para o envio da mensagem"></textarea>
+            
+                        <button type="submit" id="EnviarButton" form="Contato" name="Enviar" value="Enviar">Enviar</button>
+                        </fieldset>
+                    </form>
+        
+                    <datalist id="AssuntoContato" name="AssuntoContato">
+                        <option>Dúvida</option>
+                        <option>Sugestão</option>
+                        <option>Reclamação</option>
+                    </datalist>
+
+                    <img src="/Images/Site/Footer/mascoteContatoDesktop.png" alt="Mascote fazendo sinal de joia." class="mascotContatoDesktop">
+                </section>
+        
+                <section class="footer">
+                    <div id="footerTextContainer">
+                        <div class="logoAndLegal">
+                            <div id="logoFooterContainer">
+                                <img src="/Images/Site/Footer/LogoUrsoBranca.svg" alt="Logo Urso Branca">
+                            </div>
+                            <p id="copyright">© 2022  imobplace &emsp; <small>CNPJ: 43.886.546/0001-02</small> <br> <small>CRECI/PJ-MG: 7197 &emsp; IM/BH: 1.342.874/001-6</small></p>
+                        </div>
+            
+                        <div class="footerNav">
+                            <ul>
+                                <li><a href="/Paginas/Pricing.html">Planos</a></li>
+                                <li><a href="/Paginas/FaqPage.html">Perguntas Frequentes</a></li>
+                                <li><a href="/Paginas/termosDeAdesao.html">Termos de adesão</a></li>
+                                <li><a href="/Paginas/Cookies.html">Cookies</a></li>
+                                <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                            </ul>
+                        </div>
+
+                        <div id="RightSideDesktop">
+                            <div class="footerNavDesktop">
+                                <li><a href="/Paginas/Pricing.html">Planos</a></li>
+                                <li><a href="/Paginas/FaqPage.html">Perguntas Frequentes</a></li>
+                                <li><a href="/Paginas/termosDeAdesao.html">Termos de adesão</a></li>
+                                <li><a href="/Paginas/Cookies.html">Cookies</a></li>
+                            </div>
+                
+                            <div class="SocialMediaContainer">
+                                <a href="https://www.facebook.com/Imobplace"><img src="/Images/Site/Footer/Facebook.svg" class="socialMedia" alt="Logo Facebook"></a>
+                                <a href="https://instagram.com/imobplace_?igshid=YmMyMTA2M2Y="><img src="/Images/Site/Footer/Instagram.svg" class="socialMedia" alt="Logo Instagram"></a>
+                                <a href="https://www.linkedin.com/company/imobplace/"><img src="/Images/Site/Footer/LinkedIn.svg" class="socialMedia" alt="Logo LinkedIn"></a>
+                                <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="/Images/Site/Footer/MascoteFooter.svg" alt="Mascote fazendo sinal de joia." id="mascoteFooter">
+                </section>
+            </footer>
+    </div>
+</body>
+</html>

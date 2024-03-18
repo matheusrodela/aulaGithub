@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <meta name="author" content="Matheus Rodela">
+    <meta name="description" content="CRM, site imobiliário e anúncios nos 8 maiores portais do país em um só pacote.">
+    <meta name="theme-color" content="rgb(0, 20, 77)">
+    <title>Os 3 melhores pacotes para corretores e imobiliárias.</title>
+
+    <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!--CSS - Nav bar-->
+        <link rel="stylesheet" href="/NavBar/NavBar.css">
+        <link rel="stylesheet" href="/NavBar/HamburgerAnimation/HamburgerAnimation.css">
+    <!--CSS - Framework -> Main; Contato; Footer; Components-->
+        <link rel="stylesheet" href="/framework/Footer/Contato.css">
+        <link rel="stylesheet" href="/framework/Footer/Footer.css">
+        <link rel="stylesheet" href="/framework/Footer/Faq.css">
+        <link rel="stylesheet" href="/framework/Page/Main.css">
+        <link rel="stylesheet" href="/framework/Components/components.css">
+    <!--CSS - Current page-->
+    <link rel="stylesheet" href="/framework/Page/SaibaMais.css">
+    <link rel="stylesheet" href="/Paginas/Pricing.css">
+
+    <!--JS - don't forget the 'defer property'-->
+        <script src="/NavBar/NavBar.js" defer></script>
+        <script src="/NavBar/HamburgerAnimation/HamburgerAnimation.js" defer></script>
+        <script src="/NavBar/NavScroll.js" defer></script>
+        <script src="/framework/page.js" defer></script>
+        <script src="/Paginas/Pricing.js" defer></script>
+    <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="/Images/Site/favicon.ico">
+
+    <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+</head>
+
+<body>
+    <div class="page-wrapper">
+    <header>
+        <!--CSS do nav em NavBar>NavBar-->
+            <nav class="NavBar" id="navbar">
+                <div class="Menu"  id="ToggleButton">
+                    <div class="menu-btn">
+                        <div class="menu-btn__burger"></div>
+                    </div>
+                </div>
+
+                <div id="logoContainer">
+                    <a href="/index.html">
+                        <img src="/Images/Site/Horizontalimobplace.svg" alt="Logomarca" id="PrimaryIcon">
+                        <!--Revisar caminho da imagem-->
+                    </a>
+                </div>
+    
+                <ul class="NavList" id="NaviList">
+                    <a href="/Paginas/Pricing.html"><li class="ListItem" id="Focus">Preços</li></a>
+                    <a href="/Paginas/Divulgacao.html"><li class="ListItem">Divulgação de imóveis</li></a>
+                    <a href="/PaginasOrganizacao.html"><li class="ListItem">CRM e gestão de contratos</li></a>
+                    <a href="/Paginas/Rede.html"><li class="ListItem">Rede de corretores parceiros</li></a>
+                <!--Add 'id="Focus"' na página atual-->
+                </ul>
+    
+                <ul class="NavListDesktop">
+                    <a href="/Paginas/Pricing.html"><li class="ListItemDesktop"><button>Conheça Nossos Pacotes</button></li></a>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <!--CSS body; main; article; section. em framework>Page>Main -->
+    <div class="page-wrapper">
+        <article id="mainBanner">
+            <div id="h2Container"><h2>pacotes</h2></div>
+            <h1>Simplifique sua vida e fique livre de todas as burocracias</h1>
+            <p>TUDO PARA QUE VOCÊ POSSA FOCAR SOMENTE EM MANTER SEUS CLIENTES, CAPTAR MAIS IMÓVEIS E FECHAR MAIS NEGÓCIOS.</p>
+            <button class="secondaryButton"><a href="#Planos">Saiba Como</a></button>
+
+            <img src="/Images/Site/Organizacao/Banner/Group 674.svg" alt="Enfeite de tela - bolinhas" id="bolinhasGeral">
+            <img src="/Images/Site/Rede/Group 553.png" alt="Enfeite de tela - bolinhas desktop" id="bolinhasDesktop">
+        </article>
+
+        <article id="Pricing">
+            <div class="cardWrapper">
+            <section class="pricingCards" id="card1">
+                    <img src="/Images/Site/Pricing/Pose_Mascote_Imobplace_04 1.png" alt="Mascote mostrando o texto à direita.">
+                
+                    <div class="titleWrapper"><h1>CRM + Anúncios</h1></div>
+                    <p class="mainText">Feito para você que deseja mais visibilidade para seus imóveis.</p>
+                
+                    <select name="pacotes" id="SelectPacotes1">
+                        <option value="">Selecione seu pacote</option>
+                        <option value="10anuncios">10 anúncios</option>
+                        <option value="20anuncios">20 anúncios</option>
+                        <option value="30anuncios">30 anúncios</option>
+                        <option value="50anuncios">50 anúncios</option>
+                        <option value="100anuncios">100 anúncios</option>
+                        <option value="200anuncios">200 anúncios</option>
+                    </select>
+                    <h5></h5>
+
+                    <div class="promo">
+                        <div class="de-por">De:</div>
+                        <div class="RS-promo">R$</div>
+                        <div class="priceNumber-promo" id="promo1">250</div>
+                        <div>
+                            <div class="cents-promo">,00</div>
+                            <div class="fidelity-promo">mensal</div>
+                        </div>
+                    </div>
+                
+                    <button class="primaryButton2">
+                        <a href="#Pricing" id="button1">
+                            <div class="pricingButtonWrapper">
+                                <div class="RS">R$</div>
+                                <div class="priceNumber" id="price1">100</div>
+                                <div>
+                                    <div class="cents">,00</div>
+                                    <div class="fidelity">mensal</div>
+                                </div>
+                            </div>
+                        </a>
+                    </button>
+            </section>
+            <a href="#planoBasico" class="planDetails">Detalhes do plano</a>
+            </div>
+
+            <div class="cardWrapper">
+                <section class="pricingCards" id="card2">
+                        <img src="/Images/Site/Pricing/Pose_Mascote_Imobplace_07.png" alt="Mascote segurando xícara de café.">
+                    
+                        <div class="titleWrapper"><h1>CRM + site</h1></div>
+                        <p class="mainText">Feito para você que deseja personalizar a identidade do seu negócio.</p>
+                    
+                        <div class="selectWrapper">
+                            <select name="pacotes" id="SelectPacotes2">
+                                <option value="">Selecione seu pacote</option>
+                                <option value="100imoveis">100 imóveis</option>
+                                <option value="200imoveis">200 imóveis</option>
+                                <option value="400imoveis">400 imóveis</option>
+                            </select>
+                            <h5>+ taxa de setup de R$150,00</h5>
+                        </div>
+
+                        <div class="fakeDivCard2"></div>
+                    
+                        <button class="primaryButton2">
+                            <a href="#Pricing" id="button2">
+                                <div class="pricingButtonWrapper">
+                                    <div class="RS">R$</div>
+                                    <div class="priceNumber" id="price2">150</div>
+                                    <div>
+                                        <div class="cents">,00</div>
+                                        <div class="fidelity">mensal</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </button>
+                </section>
+                <a href="#CRMeSite" class="planDetails">Detalhes do plano</a>
+            </div>
+
+            <div class="cardWrapper">
+                <section class="pricingCards" id="card3">
+                        <img src="/Images/Site/Pricing/Rectangle Copy 6.png" alt="Mascote mostrando o texto à direita.">
+                    
+                        <div class="titleWrapper"><h1>crm + site + anúncios</h1></div>
+                        <p class="mainText">Todas as vantagens dos planos anteriores e um desconto especial!</p>
+                    
+                        <div class="selectWrapper">
+                            <select name="pacotes" id="SelectPacotes3">
+                                <option value="">Selecione seu pacote</option>
+                                <option value="10anuncios">10 anúncios</option>
+                                <option value="20anuncios">20 anúncios</option>
+                                <option value="30anuncios">30 anúncios</option>
+                                <option value="50anuncios">50 anúncios</option>
+                                <option value="100anuncios">100 anúncios</option>
+                                <option value="200anuncios">200 anúncios</option>
+                            </select>
+                            <h5>+ taxa de setup de <span>R$150,00</span> R$100,00</h5>
+                        </div>
+
+                        <div class="promo">
+                                <div class="de-por">De:</div>
+                                <div class="RS-promo">R$</div>
+                                <div class="priceNumber-promo" id="promo2">300</div>
+                                <div>
+                                    <div class="cents-promo">,00</div>
+                                    <div class="fidelity-promo">mensal</div>
+                                </div>
+                        </div>
+                  
+                        <button class="primaryButton2">
+                            <a href="#Pricing" id="button3">
+                                <div class="pricingButtonWrapper">
+                                    <div class="RS">R$</div>
+                                    <div class="priceNumber" id="price3">150</div>
+                                    <div>
+                                        <div class="cents">,00</div>
+                                        <div class="fidelity">mensal</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </button>
+                </section>
+                <a href="#Combo" class="planDetails">Detalhes do plano</a>
+            </div>
+        </article>
+
+        <article id="promoLegal">
+            <small>*Promoção válida até 02/2023.</small>
+        </article>
+
+        <article id="Planos">
+            <h1 id="PlanosMobile">Clique e descubra os recursos de cada plano</h1>
+            <h1 id="PlanosDesktop">Passe o mouse e descubra os recursos de cada plano</h1>
+
+            <!--CRM e anuncios-->
+            <section class="PlanosDescription" id="planoBasico">
+                <div id="planoSpan">
+                    <h2>CRM + Anúncios</h2>
+                    <span></span>
+                    <div id="tracinhos"></div>
+                    
+                </div>
+
+                <div id="recursosWrapper">
+                    <div class="recurso" id="recurso0">
+                        <img src="/Images/Site/Pricing/Recursos/Resumo.svg" alt="Desenho de um carrinho de compras." loading="lazy">
+                        <h3>Resumo do pacote</h3>
+                    </div>
+
+                        <div class="modal" id="modal0">
+                            <div class="modalHeader">
+                                <h5>Resumo do pacote</h5>
+                                <img src="/Images/Site/Pricing/Recursos/Resumo.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>O nome do pacote define a quantidade de anúncios a ser publicada em cada portal; <br> <br> Você poderá cadastrar no CRM o dobro da quantidade de imóveis a ser anunciada. <strong>Exemplo:</strong> Pacote 10 anúncios - Pode cadastrar até 20 imóveis no CRM;</p>
+                        </div>
+
+                    <div class="recurso" id="recurso1">
+                        <img src="/Images/Site/Pricing/Recursos/basico6svg.svg" alt="Desenho de um bonequinho e uma engrenagem." loading="lazy">
+                        <h3>1 usuário no crm</h3>
+                    </div>
+
+                        <div class="modal" id="modal1">
+                            <div class="modalHeader">
+                                <h5>1 usuário no CRM</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico6svg.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Seu pacote inclui um usuário no CRM, que pode ser acessado pelo celular ou computador. <br><br> Precisa de mais usuários? Usuários adicionais podem ser adquiridos a qualquer momento por R$25,00 cada.</p>
+                        </div>
+
+                    <div class="recurso"id="recurso2">
+                        <img src="/Images/Site/Pricing/Recursos/basico2.svg" alt="Desenho de um cubo." loading="lazy">
+                        <h3>8 portais imobiliários</h3>
+                    </div>
+
+                        <div class="modal" id="modal2">
+                            <div class="modalHeader">
+                                <h5>Anúncio em 8 portais</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico2.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Seus imóveis publicados nos 8 maiores portais de imóveis do país! <br> <br> OLX; Viva Real; ImovelWeb; Zap Imóveis; Lugar Certo; Mercado Livre; Casa Mineira; Campainha</p>
+                        </div>
+
+                    <div class="recurso"id="recurso3">
+                        <img src="/Images/Site/Pricing/Recursos/funil.svg" alt="Desenho de um funil." loading="lazy">
+                        <h3>funil de atendimento</h3>
+                    </div>
+
+                        <div class="modal" id="modal3">
+                            <div class="modalHeader">
+                                <h5>Funil de atendimento</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico3.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Ferramenta profissional de organização e otimização de atendimento ao cliente. Tenha as informações mais importante do seu cliente sempre organizadas em um só local.</p>
+                        </div>
+
+                    <div class="recurso"id="recurso4">
+                        <img src="/Images/Site/Pricing/Recursos/basico4.svg" alt="Desenho de um card com um bonequinho dentro." loading="lazy">
+                        <h3>Central de leads</h3>
+                    </div>
+
+                        <div class="modal" id="modal4">
+                            <div class="modalHeader">
+                                <h5>Central de leads</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico4.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Centralize o recebimento das suas leads de todos os portais em um só painel.</p>
+                        </div>
+
+                    <div class="recurso" id="recurso5">
+                        <img src="/Images/Site/Pricing/Recursos/basico5.svg" alt="Carinha sorrindo e sinal de 'mais'." loading="lazy">
+                        <h3>Rede de corretores</h3>
+                    </div>
+
+                        <div class="modal" id="modal5">
+                            <div class="modalHeader">
+                                <h5>disponível em breve</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico5.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>As parcerias permitem que você tenha acesso a imóveis selecionados disponibilizados por outros corretores para que você amplie sua carteira e faça mais vendas.</p>
+                        </div>
+
+                    <div class="recurso"id="recurso6">
+                        <img src="/Images/Site/Pricing/Icon.svg" alt="Desenho de headphone." loading="lazy">
+                        <h3>Consultorias exclusivas</h3>
+                    </div>
+
+                        <div class="modal" id="modal6">
+                            <div class="modalHeader">
+                                <h5>Consoltorias exclusivas</h5>
+                                <img src="/Images/Site/Pricing/Icon.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Consultorias exclusivas sobre qualidade dos anúncios, métricas de sucesso e como utilizar SEO (otimização de ferramenta de busca) nos seus anúncios. </p>
+                        </div>
+
+                    <div class="recurso"id="recurso7">
+                        <img src="/Images/Site/Pricing/Recursos/telefoneEEngrenagem.svg" alt="Desenho de um celular e um símbolo de 'engrenagem'." loading="lazy">
+                        <h3>Suporte centralizado</h3>
+                    </div>
+
+                        <div class="modal" id="modal7">
+                            <div class="modalHeader">
+                                <h5>Suporte centralizado</h5>
+                                <img src="/Images/Site/Pricing/Recursos/telefoneEEngrenagem.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Receba suporte para qualquer portal parceiro através dos nossos atendentes. </p>
+                        </div>
+
+                    <div class="recurso"id="recurso8">
+                        <img src="/Images/Site/Pricing/Recursos/basico7.svg" alt="Desenho de um calendário." loading="lazy">
+                        <h3>Android & IOS</h3>
+                    </div>
+
+                        <div class="modal" id="modal8">
+                            <div class="modalHeader">
+                                <h5>Android & IOs</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico7.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>App do CRM disponível para Android e IOs. Publique ou altere anúncios, edite seus atendimentos, etc. de onde estiver.</p>
+                        </div>
+
+                    <div class="recurso"id="recurso9">
+                        <img src="/Images/Site/Pricing/Recursos/contratos.svg" alt="Desenho de um papel com um $ no meio." loading="lazy">
+                        <h3>Assinatura digital</h3>
+                    </div>
+
+                        <div class="modal" id="modal9">
+                            <div class="modalHeader">
+                                <h5>Assinatura digital</h5>
+                                <img src="/Images/Site/Pricing/Recursos/contratos.svg" alt="Desenho de um papel com um $ no meio." loading="lazy">
+                            </div>
+                            <p>Assinatura digital oficial para todos os seus contratos.</p>
+                        </div>
+                </div>
+
+                <div class="buttonWrapper">
+                    <button class="primaryButton">
+                        <a href="#card1">Contratar este plano</a>
+                    </button>
+                </div>
+
+                <img src="/Images/Site/Pricing/Group 721.png" alt="Enfeite de tela." id="enfeiteDeTelaRecursos">
+            </section>
+
+            <!--CRM e site-->
+            <section class="PlanosDescription" id="CRMeSite">
+                <div id="planoSpan">
+                    <h2>CRM + Site</h2>
+                    <span></span>
+                    <div id="tracinhos"></div>
+                    
+                </div>
+
+                <div id="recursosWrapper">
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Recursos/Resumo.svg" alt="Desenho de um carrinho de compras." loading="lazy">
+                        <h3>Resumo do pacote</h3>
+                    </div>
+
+                        <div class="modal" id="modalSite0">
+                            <div class="modalHeader">
+                                <h5>Resumo do pacote</h5>
+                                <img src="/Images/Site/Pricing/Recursos/Resumo.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>O pacote inclui 1 site imobiliário personalizado a partir de um dos layouts disponíveis; <br><br> A quantidade de imóveis publicada no site e aceita no CRM é definida pelo nome do pacote. <br><br> O setup (criação) do site tem o valor de R$150,00 e será adicionado na sua primeira compra.</p>
+                        </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Recursos/basico6svg.svg" alt="Desenho de um bonequinho e uma engrenagem." loading="lazy">
+                        <h3>1 usuário no crm</h3>
+                    </div>
+                    
+                        <div class="modal" id="modalSite1">
+                            <div class="modalHeader">
+                                <h5>1 usuário no CRM</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico6svg.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Seu pacote inclui um usuário no CRM, que pode ser acessado pelo celular ou computador. <br><br> Precisa de mais usuários? Usuários adicionais podem ser adquiridos a qualquer momento por R$25,00 cada.</p>
+                        </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Recursos/Component 111.svg" alt="Desenho de um computador com 'WWW.' escrito na tela." loading="lazy">
+                        <h3>Site personalizado</h3>
+                    </div>
+
+                    <div class="modal" id="modalSite2">
+                        <div class="modalHeader">
+                            <h5>Site personalizado</h5>
+                            <img src="/Images/Site/Pricing/Recursos/Component 111.svg" alt="Desenho de um computador com 'WWW.' escrito na tela." loading="lazy">
+                        </div>
+                        <p>Escolha um de nossos layouts otimizados para alta perfomance na internet e tenha um site próprio. <br><br> <u>Tecnologia embarcada:</u> <br> Busca avançada e com mapa; Integração com Whats, Telegram e Redes Sociais; Calculadora de Avaliação</p>
+                    </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Recursos/funil.svg" alt="Desenho de um funil." loading="lazy">
+                        <h3>funil de atendimento</h3>
+                    </div>
+                    
+                        <div class="modal" id="modalSite3">
+                            <div class="modalHeader">
+                                <h5>Funil de atendimento</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico3.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Ferramenta profissional de organização e otimização de atendimento ao cliente. Tenha as informações mais importante do seu cliente sempre organizadas em um só local.</p>
+                        </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Recursos/basico4.svg" alt="Desenho de um card com um bonequinho dentro." loading="lazy">
+                        <h3>painel de leads</h3>
+                    </div>
+                    
+                        <div class="modal" id="modalSite4">
+                            <div class="modalHeader">
+                                <h5>Central de leads</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico4.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Centralize o recebimento das suas leads do seu site e de todos os portais em um só painel.</p>
+                        </div>
+
+                    <div class="recurso" id="recurso5">
+                        <img src="/Images/Site/Pricing/Recursos/basico5.svg" alt="Carinha sorrindo e sinal de 'mais'." loading="lazy">
+                        <h3>Rede de corretores</h3>
+                    </div>
+                    
+                        <div class="modal" id="modalSite5">
+                            <div class="modalHeader">
+                                <h5>disponível em breve</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico5.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>As parcerias permitem que você tenha acesso a imóveis selecionados disponibilizados por outros corretores para que você amplie sua carteira e faça mais vendas.</p>
+                        </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Recursos/basico7.svg" alt="Desenho de um celular e um símbolo de 'check'." loading="lazy">
+                        <h3>android & ios</h3>
+                    </div>
+                    
+                        <div class="modal" id="modalSite6">
+                            <div class="modalHeader">
+                                <h5>Android & IOS</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico7.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>App do CRM disponível para Android e IOs. Publique ou altere anúncios, edite seus atendimentos, etc. de onde estiver.</p>
+                        </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Recursos/contratos.svg" alt="Desenho de um papel com um $ no meio." loading="lazy">
+                        <h3>Assinatura digital</h3>
+                    </div>
+                    
+                        <div class="modal" id="modalSite7">
+                            <div class="modalHeader">
+                                <h5>Assinatura digital</h5>
+                                <img src="/Images/Site/Pricing/Recursos/contratos.svg" alt="Desenho de um papel com um $ no meio." loading="lazy">
+                            </div>
+                            <p>Assinatura digital oficial para todos os seus contratos.</p>
+                        </div>
+
+                </div>
+
+                <div class="buttonWrapper">
+                    <button class="primaryButton">
+                        <a href="#card2">Contratar este plano</a>
+                    </button>
+                </div>
+
+                <img src="/Images/Site/Pricing/Group 721.png" alt="Enfeite de tela." id="enfeiteDeTelaRecursos">
+            </section>
+
+            <!--Combo-->
+            <section class="PlanosDescription" id="Combo">
+                <h2>Combo CRM, Site e Anúncios</h2>
+                <span></span>
+
+                <div id="todasAsVantagens">
+                    <img src="/Images/Site/Pricing/Recursos/todasAsVantagens.svg" alt="Logomarca verde." loading="lazy">
+                    <h3>Desconto exclusivo do combo</h3>
+                </div>
+
+                <div id="recursosWrapper">
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Recursos/ResumoBranco.svg" alt="Desenho de um carrinho de compras." loading="lazy">
+                        <h3>Resumo do pacote</h3>
+                    </div>
+
+                        <div class="modal" id="modalCombo0">
+                            <div class="modalHeader">
+                                <h5>Resumo do pacote</h5>
+                                <img src="/Images/Site/Pricing/Recursos/Resumo.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Todos os pacotes Combo recebem <strong>desconto</strong> sobre o valor somado da contratação dos pacotes "Site + CRM" e "Anúncios + CRM"; <br><br> O nome do pacote define a quantidade de anúncios a ser publicada em cada portal; <br> <br> Você poderá cadastrar no CRM o dobro da quantidade de imóveis a ser anunciada. <strong>Exemplo:</strong> Pacote 10 anúncios - Pode cadastrar até 20 imóveis no CRM; <br> <br> O pacote inclui 1 site imobiliário personalizado a partir de um dos layouts disponíveis. <br><br> O setup (criação) do site tem o valor de R$150,00 e será adicionado na sua primeira compra.</p>
+                        </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Recursos/usuario.svg" alt="Desenho de um relógio e uma engrenagem." loading="lazy">
+                        <h3>1 a 5 usuários</h3>
+                    </div>
+
+                        <div class="modal" id="modalCombo1">
+                            <div class="modalHeader">
+                                <h5>1 a 5 usuários no CRM</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico6svg.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Seu pacote inclui de 1 a 5 usuários no CRM, variando de quantidade de acordo com o pacote contratado.</p>
+                            <ul>
+                                <li>Pacote 10 - 1 usuário</li>
+                                <li>Pacote 20 - 2 usuários</li>
+                                <li>Pacote 30 - 3 usuários</li>
+                                <li>Pacote 50 - 4 usuários</li>
+                                <li>Pacotes 100 e 200 - 5 usuários</li>
+                            </ul>
+                        </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Combo/anuncios.svg" alt="Desenho de um celular e uma engrenagem." loading="lazy">
+                        <h3>8 portais imobiliários</h3>
+                    </div>
+
+                        <div class="modal" id="modalCombo2">
+                            <div class="modalHeader">
+                                <h5>Anúncio em 8 portais</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico2.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Seus imóveis publicados nos 8 maiores portais de imóveis do país! <br> <br> OLX; Viva Real; ImovelWeb; Zap Imóveis; Lugar Certo; Mercado Livre; Casa Mineira; Campainha</p>
+                        </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Combo/site.png" alt="Desenho de um celular brilhando." loading="lazy">
+                        <h3>Site personalizado</h3>
+                    </div>
+
+                        <div class="modal" id="modalCombo3">
+                            <div class="modalHeader">
+                                <h5>Site personalizado</h5>
+                                <img src="/Images/Site/Pricing/Recursos/Component 111.svg" alt="Desenho de um computador com 'WWW.' escrito na tela." loading="lazy">
+                            </div>
+                            <p>Escolha um de nossos layouts otimizados para alta perfomance na internet e tenha um site próprio. <br><br> <u>Tecnologia embarcada:</u> <br> Busca avançada e com mapa; Integração com Whats, Telegram e Redes Sociais; Calculadora de Avaliação</p>
+                        </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Combo/funil.svg" alt="Desenho de um cifrão com setas ao redor." loading="lazy">
+                        <h3>Funil de atendimento</h3>
+                    </div>
+
+                        <div class="modal" id="modalCombo4">
+                            <div class="modalHeader">
+                                <h5>Funil de atendimento</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico3.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Ferramenta profissional de organização e otimização de atendimento ao cliente. Tenha as informações mais importante do seu cliente sempre organizadas em um só local.</p>
+                        </div>
+
+                    <div class="recurso" id="recurso5">
+                        <img src="/Images/Site/Pricing/Recursos/central.svg" alt="Desenho de etiquetas" loading="lazy">
+                        <h3>Central de leads</h3>
+                    </div>
+
+                        <div class="modal" id="modalCombo5">
+                            <div class="modalHeader">
+                                <h5>Central de leads</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico4.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Centralize o recebimento das suas leads de todos os portais em um só painel.</p>
+                        </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Combo/rede.svg" alt="Desenho de um cifrão e um símbolo 'check'" loading="lazy">
+                        <h3>Rede de corretores</h3>
+                    </div>
+
+                        <div class="modal" id="modalCombo6">
+                            <div class="modalHeader">
+                                <h5>disponível em breve</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico5.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>As parcerias permitem que você tenha acesso a imóveis selecionados disponibilizados por outros corretores para que você amplie sua carteira e faça mais vendas.</p>
+                        </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Combo/consultoria.svg" alt="Desenho de uma nota de dinheiro e uma estrela." loading="lazy">
+                        <h3>Consultorias exclusivas</h3>
+                    </div>
+
+                        <div class="modal" id="modalCombo7">
+                            <div class="modalHeader">
+                                <h5>Consoltorias exclusivas</h5>
+                                <img src="/Images/Site/Pricing/Icon.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Consultorias exclusivas sobre qualidade dos anúncios, métricas de sucesso e como utilizar SEO (otimização de ferramenta de busca) nos seus anúncios. </p>
+                        </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Recursos/parceiro2.svg" alt="Desenho de notas de dinheiro." loading="lazy">
+                        <h3>Suporte centralizado</h3>
+                    </div>
+
+                        <div class="modal" id="modalCombo8">
+                            <div class="modalHeader">
+                                <h5>Suporte centralizado</h5>
+                                <img src="/Images/Site/Pricing/Recursos/telefoneEEngrenagem.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>Receba suporte para qualquer portal parceiro através dos nossos atendentes. </p>
+                        </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Combo/android.svg" alt="Desenho de um documento com um cifrão dentro." loading="lazy">
+                        <h3>Android & IOS</h3>
+                    </div>
+
+                        <div class="modal" id="modalCombo9">
+                            <div class="modalHeader">
+                                <h5>Android & IOs</h5>
+                                <img src="/Images/Site/Pricing/Recursos/basico7.svg" alt="Desenho de um funil." loading="lazy">
+                            </div>
+                            <p>App do CRM disponível para Android e IOs. Publique ou altere anúncios, edite seus atendimentos, etc. de onde estiver.</p>
+                        </div>
+
+                    <div class="recurso">
+                        <img src="/Images/Site/Pricing/Recursos/parceiro9.svg" alt="Desenho de um uma balança antiga." loading="lazy">
+                        <h3>Assinatura digital</h3>
+                    </div>
+
+                        <div class="modal" id="modalCombo10">
+                            <div class="modalHeader">
+                                <h5>Assinatura digital</h5>
+                                <img src="/Images/Site/Pricing/Recursos/contratos.svg" alt="Desenho de um papel com um $ no meio." loading="lazy">
+                            </div>
+                            <p>Assinatura digital oficial para todos os seus contratos.</p>
+                        </div>
+                </div>
+
+                <div class="buttonWrapper">
+                    <button class="primaryButton">
+                        <a href="#card3">Contratar este plano</a>
+                    </button>
+                </div>
+            </section>
+
+        </article>
+
+        <article id="textoDeApoio">
+            <div id="textoDeApoioTextWrapper">
+                <h1>Pacotes sem tempo de fidelidade mínimo</h1>
+                <p>Cancele seu plano a qualquer hora após a contratação! Caso você não se adapte ao modelo de negócios ou alguma das nossas ferramentas, é necessário apenas que você pague o mês atual de uso e nada mais.</p>
+            </div>
+
+            <img src="/Images/Site/Pricing/Group 26.png" alt="Imagem de um computador com um imóvel do CRM aberto na tela." loading="lazy">
+        </article>
+
+    </div>
+    </main>
+
+    <footer>
+
+        <section class="contact">
+            <!--CSS do contact em framework>Footer>Contato-->
+                <h2>Contato</h2>
+                <p>Ficou com alguma dúvida ou quer saber mais sobre a empresa? Envie sua mensagem e responderemos o mais rápido possível!</p>
+    
+                <form action="" id="Contato">
+                    <fieldset form="Contato" name="inputsContato">
+                        <label for="Nome">Nome</label>
+                        <input type="text" id="Nome" placeholder="Nome" form="Contato" name="Nome" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" placeholder="Email" form="Contato" name="Email" required title="É obrigatório preencher todos os campos para o envio da mensagem"title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Telefone">Telefone</label>
+                        <input type="tel" id="Telefone" placeholder="Telefone" form="Contato" name="Telefone" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Assunto">Assunto</label>
+                        <input type="text" list="AssuntoContato" id="Assunto" placeholder="Assunto" form="Contato" name="Contato" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Mensagem"></label>
+                        <textarea name="Mensagem" id="Mensagem" placeholder="Mensagem" cols="20" rows="10" form="Contato" required title="É obrigatório preencher todos os campos para o envio da mensagem"></textarea>
+        
+                    <button type="submit" id="EnviarButton" form="Contato" name="Enviar" value="Enviar">Enviar</button>
+                    </fieldset>
+                </form>
+    
+                <datalist id="AssuntoContato" name="AssuntoContato">
+                    <option>Dúvida</option>
+                    <option>Sugestão</option>
+                    <option>Reclamação</option>
+                </datalist>
+
+                <img src="/Images/Site/Footer/mascoteContatoDesktop.png" alt="Mascote fazendo sinal de joia." class="mascotContatoDesktop">
+            </section>
+
+            <section class="footer">
+                <div id="footerTextContainer">
+                    <div class="logoAndLegal">
+                        <div id="logoFooterContainer">
+                            <img src="/Images/Site/Footer/LogoUrsoBranca.svg" alt="Logo Urso Branca">
+                            <!--Revisar caminho da imagem-->
+                        </div>
+                        <p id="copyright">© 2022  imobplace &emsp; <small>CNPJ: 43.886.546./0001-02</small> <br> <small>CRECI/PJ-MG: 7197 &emsp; IM/BH: 1.342.874/001-6</small></p>
+                    </div>
+        
+                    <div class="footerNav">
+                        <ul>
+                            <li><a href="/Paginas/Pricing.html">Planos</a></li>
+                            <li><a href="/Paginas/FaqPage.html">Perguntas Frequentes</a></li>
+                            <li><a href="/Paginas/termosDeAdesao.html">Termos de adesão</a></li>
+                            <li><a href="/Paginas/Cookies.html">Cookies</a></li>
+                            <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                        </ul>
+                    </div>
+    
+                    <div id="RightSideDesktop">
+                        <div class="footerNavDesktop">
+                            <li><a href="/Paginas/Pricing.html">Planos</a></li>
+                            <li><a href="/Paginas/FaqPage.html">Perguntas Frequentes</a></li>
+                            <li><a href="/Paginas/termosDeAdesao.html">Termos de adesão</a></li>
+                            <li><a href="/Paginas/Cookies.html">Cookies</a></li>
+                        </div>
+            
+                        <div class="SocialMediaContainer">
+                            <a href="https://www.facebook.com/Imobplace"><img src="/Images/Site/Footer/Facebook.svg" class="socialMedia" alt="Logo Facebook"></a>
+                            <a href="https://instagram.com/imobplace_?igshid=YmMyMTA2M2Y="><img src="/Images/Site/Footer/Instagram.svg" class="socialMedia" alt="Logo Instagram"></a>
+                            <a href="https://www.linkedin.com/company/imobplace/"><img src="/Images/Site/Footer/LinkedIn.svg" class="socialMedia" alt="Logo LinkedIn"></a>
+                            <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                        </div>
+                    </div>
+                </div>
+    
+                <img src="/Images/Site/Footer/MascoteFooter.svg" alt="Mascote fazendo sinal de joia." id="mascoteFooter">
+            </section>
+    </footer>
+    </div>
+</body>
+</html>
+
+
+
+

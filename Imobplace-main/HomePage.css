@@ -1,0 +1,505 @@
+
+/*BANNER*/
+#mainBanner{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    align-items: center;
+
+    padding: 2.5rem 3rem 1.5rem;
+
+    background-color: rgb(0, 20, 77);
+}
+
+#mainBanner h1{
+    color: rgb(147, 249, 255);
+
+    margin-bottom: 1.5rem;
+}
+
+#mainBanner p{
+    color: white;
+
+    font-size: 1rem;
+    line-height: 1.4rem;
+
+    margin-bottom: 2rem;
+}
+
+#mainBanner img{
+    flex-shrink: 2;
+    max-height: 17rem;
+    width: auto;
+
+}
+
+#mainBanner button{
+    padding: .6rem 5rem;
+    margin-bottom: 2rem;
+}
+
+
+/*LOGOS PORTAIS*/
+#LogosPortais{
+    width: 100rem;
+    height: 4.5rem;
+    padding-top: .5rem;
+
+    position: relative;
+
+    background-color: white;
+}
+
+.logosContainer{
+    position: absolute;
+
+    width: 100%;
+    animation-name: animação;
+    animation-duration: 40s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes animação{
+    0% {margin-left: 0;}
+   50% {margin-left:-35%}
+   51% {margin-left:-35%}
+   100% {margin-left: 0%}
+}
+
+.portais{
+    height: 1.8rem;
+
+    margin: 1rem .8rem;
+}
+
+
+/*VANTAGENS*/
+#Vantagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem 2rem 3rem;
+
+    background-color: white;
+}
+
+#imageVantagens{
+    max-width: 22rem;
+
+    margin-top: 1rem;
+}
+
+.cardsVantagens{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-top: 3.5rem;
+}
+
+.cardsVantagens img{
+    height: 2rem;
+
+    margin-bottom: 1rem;
+}
+
+.cardsVantagens h2{
+    font-size: 1.25rem;
+
+    color: rgb(0, 139, 148);
+
+    margin-bottom: 1rem;
+}
+
+.cardsVantagens h1{
+    font-size: 1.5rem;
+
+    color: rgb(0, 40, 151);
+
+    margin-bottom: .7rem;
+}
+
+.cardsVantagens p{
+    font-size: 1.1rem;
+
+    color: rgb(81, 81, 81);
+}
+
+
+/*VIDEO*/
+#video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(233, 233, 233);
+
+    height: 20rem;
+}
+
+
+iframe{
+    width: 90vw; 
+    height: 250px;
+    border-radius: 15px;
+}
+
+
+/*SUA JORNADA*/
+#saibaMais{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem 2.6rem 2rem;
+
+    background-color: rgb(243, 243, 243);
+}
+
+.cardsSaibaMais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 15px;
+    box-shadow: -1px 3px 4px 0 rgba(68, 67, 67, 0.5);
+
+    padding: 1.5rem 1.5rem 0rem;
+    margin: 1.5rem 0;
+}
+
+.cardsSaibaMais img{
+    height: 6rem;
+
+    padding-bottom: 1rem;
+}
+
+.cardsSaibaMais span{
+    width: 10rem;
+    border-bottom: 1px dashed rgb(163, 163, 163);
+
+    margin-bottom: 1rem;
+}
+
+#saibaMais h1{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+
+    text-align: center;
+    
+    color: rgb(81, 81, 81);
+
+    margin-bottom: 1rem;
+}
+
+#saibaMaisTitle{
+    padding: 2rem 0;
+}
+
+#saibaMais p{
+    text-align: center;
+    font-size: 1.1rem;
+    color: rgb(122, 122, 122);
+}
+
+#saibaMais button{
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 2rem;
+}
+
+
+/*PARCEIRO DO URSO*/
+#SejaParceiroDoUrso{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(0, 146, 155);
+    color: white;
+
+    padding: 4rem 2rem 2rem;
+}
+
+#SejaParceiroDoUrso h1{
+    font-size: 1.4rem;
+    text-align: center;
+
+    padding-bottom: 1rem;
+}
+
+#SejaParceiroDoUrso p{
+    font-size: 1.1rem;
+    text-align: center;
+
+    padding-bottom: 1.5rem;
+}
+
+.cardParceiroDoUrso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    border: 0px;
+
+    margin: 2rem 0;
+}
+
+.cardParceiroDoUrso img{
+    height: 4rem;
+    
+    margin-bottom: .5rem;
+}
+
+.cardParceiroDoUrso h2{
+    font-size: 1.25rem;
+    text-align: center;
+
+    width: 14rem;
+
+    font-weight: lighter;
+}
+
+.cardParceiroDoUrso span{
+    font-size: 1.6rem;
+
+    font-weight: bold;
+}
+
+#SejaParceiroDoUrso button{
+    background-color: white;
+    padding: .6rem 4rem;
+}
+
+#SejaParceiroDoUrso button a{
+    color: rgb(0, 88, 94);
+}
+
+
+/*GRAFICO*/
+#grafico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    background-color: white;
+}
+
+#grafico h1{
+    font-size: 1.5rem;
+    color: rgb(0, 40, 151);
+
+    text-align: center;
+
+    margin: 2rem 0;
+}
+
+#grafico p{
+    font-size: 1rem;
+    color: rgb(81, 81, 81);
+
+    padding: 0 2rem;
+
+    line-height: 1.8rem;
+
+    margin-bottom: 2rem;
+}
+
+#graficoWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem 0;
+
+    background-image: url(/Images/Site/Home/Grafico/Group28.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: 30% center;
+}
+
+#graficoWrapper img{
+    max-width: 25rem;
+}
+
+
+/*DEPOIMENTOS*/
+#depoimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(243, 243, 243);
+
+    color: rgb(0, 24, 90);
+
+    padding-top: 2rem;
+}
+
+#depoimentos h1{
+    font-size: 1.5rem;
+    color: rgb(5, 40, 136);
+    text-align: start;
+
+    margin-bottom: 1rem;
+
+    padding: 0 3rem .7rem 3rem;
+
+}
+
+/*depoimentos e overflow*/
+#wrapperDepoimentos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    background-color: rgb(243, 243, 243);
+
+    overflow: auto;
+    -webkit-overflow-scrolling: auto;
+    scroll-snap-type: x mandatory;
+  
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  
+  ::-webkit-scrollbar:vertical {
+    width: .6rem;
+  }
+  
+  ::-webkit-scrollbar:horizontal {
+    height: .6rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, rgba(8, 196, 168, .6),50% , rgba(11, 146, 190, .6), rgba(13, 99, 211, .6));
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+
+
+.Depoimento{
+    min-width: 100vw;
+
+    padding: 0 2rem 2rem;
+
+    background-color: transparent;
+
+    scroll-snap-align: start;
+
+    color: rgb(0, 24, 90);
+}
+
+.Depoimento h1{
+    display: none;
+}
+
+.wrapperCorretores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Depoimento img{
+    max-width: 16rem;
+    padding-bottom: 1rem;
+}
+
+.DepoimentoDesktop{
+    display: none;
+}
+
+.Depoimento p{
+    line-height: 1.8rem;
+}
+
+.Depoimento h2{
+    font-size: 1.1rem;
+
+    padding: 1.2rem 0 .3rem;
+}
+
+.Depoimento h3{
+    font-size: .9rem;
+}
+
+/*falso contador de páginas*/
+.wrapperBolinhas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 3rem;
+}
+
+.Bolinhas{
+    width: 5.5rem;
+    margin-bottom: 0;
+}
+
+
+
+/*Footer*/
+#Focus{
+    display: none;
+}
+
+
+/*Text Style*/
+h1{
+    font-size: 1.4rem;
+}
+
+h2{
+    font-size: 1.35rem;
+}
+
+
+
+/*DESKTOP*/
+@Media all and (max-width: 850px) {
+
+    /*Banner*/
+    #Desktop, #DesktopButton{
+        display: none;
+    }
+
+    /*Vantagens*/
+    #imageVantagensDesktop{
+        display: none;
+    }
+
+    /*Parceiro do Urso*/
+    #enfeiteParceiroDoUrsoDesktop{
+        display: none;
+    }
+
+    /*Diagrama*/
+    #diagramaDesktop{
+        display: none;
+    }
+
+}

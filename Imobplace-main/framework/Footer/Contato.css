@@ -1,0 +1,252 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(8, 60, 206);
+    color: white;
+
+    padding: 5rem 1.5rem 1rem;
+    min-height: 83vh;
+    font-size: .8rem;
+}
+
+/*Form*/
+    label{
+        display: none;
+    }
+
+    fieldset{
+        border: 0;
+    }
+
+/*Customized button*/
+    #EnviarButton{
+        background-color: white;
+        color: rgb(17, 78, 247);
+        text-transform: none;
+
+        margin: 1.5rem 0;
+        font-size: 1rem;
+        padding: .6rem 2rem;
+    }
+
+    #EnviarButton:hover{
+        color: white;
+        background-color: rgb(17, 78, 247);
+    }
+
+/*Text*/
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .contact p{
+        font-size: .95rem;
+        line-height: 1.5rem;
+        padding: .8rem 0;
+    }
+
+    ::placeholder{
+        color: white;
+    }
+
+/*Inputs*/
+    input, textarea{
+        background-color: inherit;
+        border: white solid .8px;
+        border-radius: 12px;
+
+        font-size: 1.05rem;
+        color: white;
+
+        width: 100%;
+
+        padding: .8rem;
+        margin: .7rem 0 0;
+    }
+
+/*Placeholder icons*/
+input#Nome{
+    background-image: url(/Images/Site/Contato/nameIcon.svg);
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    text-indent: 2rem;
+}
+
+    input#Nome:hover{
+        background-image: none;
+        text-indent: .5rem;
+    }
+
+
+input#Email{
+    background-image: url(/Images/Site/Contato/emailIcon.svg);
+    background-repeat: no-repeat;
+    background-position: 4% center;
+    text-indent: 2rem;
+}
+
+    input#Email:hover{
+        background-image: none;
+        text-indent: .5rem;
+    }
+
+
+input#Telefone{
+    background-image: url(/Images/Site/Contato/phoneIcon.svg);
+    background-repeat: no-repeat;
+    background-position: 5% center;
+    text-indent: 2rem;
+}
+
+    input#Telefone:hover{
+        background-image: none;
+        text-indent: .5rem;
+    }
+
+
+.mascotContatoDesktop{
+    display: none;
+}
+
+
+@media (min-width: 700px) and (orientation: landscape){
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        position: relative;
+
+        background: linear-gradient(90deg, rgba(17, 78, 247, 1), rgba(61, 214, 255, 1));
+        color: white;
+
+        padding: 1rem 1.5rem 1rem 15%;
+        min-height: 83vh;
+    }
+
+    #Contato{
+        width: 40vw;
+    }
+    
+    /*Form*/
+        label{
+            display: none;
+        }
+    
+        fieldset{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
+            border: 0;
+        }
+    
+    /*Customized button*/
+        #Enviar{
+            background-color: white;
+            color: rgb(17, 78, 247);
+    
+            margin: 1rem 0;
+            font-size: 1rem;
+            padding: .6rem 2rem;
+            text-transform: none
+        }
+    
+    /*Text*/
+        h2{
+            padding-top: 1.5rem;
+            font-size: 1.8rem;
+        }
+    
+        .contact p{
+            font-size: .8rem;
+            line-height: 1.5rem;
+            padding: .8rem 0;
+
+            width: 30%;
+        }
+    
+        ::placeholder{
+            color: white;
+        }
+    
+    /*Inputs*/
+        input{
+            width: 49%;
+            padding: .55rem;
+
+            font-size: .9rem;
+        }
+
+        input:focus{
+            outline: 0;
+            border: rgb(0, 47, 177) solid 1px;
+        }
+
+        textarea{
+            background-color: inherit;
+            border: white solid .8px;
+            border-radius: 12px;
+            height: 10rem;
+    
+            font-size: 1rem;
+            color: white;
+    
+            padding: .8rem;
+        }
+    
+    /*Placeholder icons*/
+    input#Nome{
+        background-image: url(/Images/Site/Contato/nameIcon.svg);
+        background-repeat: no-repeat;
+        background-position: 5% center;
+        text-indent: 2rem;
+    }
+    
+        input#Nome:hover{
+            background-image: none;
+            text-indent: .5rem;
+        }
+    
+    
+    input#Email{
+        background-image: url(/Images/Site/Contato/emailIcon.svg);
+        background-repeat: no-repeat;
+        background-position: 4% center;
+        text-indent: 2rem;
+    }
+    
+        input#Email:hover{
+            background-image: none;
+            text-indent: .5rem;
+        }
+    
+    
+    input#Telefone{
+        background-image: url(/Images/Site/Contato/phoneIcon.svg);
+        background-repeat: no-repeat;
+        background-position: 5% center;
+        text-indent: 2rem;
+    }
+    
+        input#Telefone:hover{
+            background-image: none;
+            text-indent: .5rem;
+        }
+
+    
+    .mascotContatoDesktop{
+        display: block;
+        position: absolute;
+        bottom: -1%;
+        right: 11%;
+
+        width: 33%;
+    }
+}
+
+
+
+

@@ -1,0 +1,161 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    max-width: 100vw;
+    position: relative;
+
+    padding: 3rem 1.6rem 0;
+    font-size: 1rem;
+
+    background-color: rgb(0,20,77);
+    color: white;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*Logo and legal*/
+    .logoAndLegal{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #logoFooterContainer{
+        padding-bottom: 1rem;
+    }
+
+    #logoFooterContainer img{
+        height: 2rem;
+    }
+
+    #copyright{
+        font-weight: bold;
+        font-size: 1.05rem
+    }
+
+    #copyright small{
+        font-size: 0.8rem;
+        font-weight: lighter;
+    }
+
+
+/*Footer Nav*/
+    .footerNav{
+        padding: 1rem 0;
+    }
+
+    .footerNav li{
+        padding: .8rem 0;
+    }
+
+    .footerNavDesktop{
+        display: none;
+    }
+
+
+/*Social media*/
+    .SocialMediaContainer{
+        display: flex;
+        flex-direction: row;
+
+        margin-bottom: 2rem;
+
+        gap: .8rem;
+    }
+
+    .socialMedia{
+        height: 2rem;
+    }
+
+    #mascoteFooter{
+        position: absolute;
+        height: 65%;
+        bottom: 0;
+        right: 5%;
+    }
+
+
+    @media (min-width: 700px) and (orientation: landscape){
+
+        .footer{
+            padding: 3rem 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #footerTextContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12rem;
+        }
+
+        .logoAndLegal{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+            width: fit-content;
+            padding: 0;
+        }
+
+            #logoFooterContainer{
+                display: flex;
+                align-items: center;
+                padding: 0;
+            }
+
+        .SocialMediaContainer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            margin: 0;
+        }
+
+        #RightSideDesktop{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        #copyright{
+            font-size: 1rem;
+            font-weight: normal;
+        }
+
+        .footerNav{
+            display: none;
+        }
+
+        .footerNavDesktop{
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        .footerNavDesktop a{
+            text-decoration: none;
+            color: white;
+
+            font-size: 1rem;
+        }
+
+
+        #mascoteFooter{
+            display: none;
+        }
+    }

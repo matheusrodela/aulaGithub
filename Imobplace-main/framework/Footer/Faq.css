@@ -1,0 +1,192 @@
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    background-color: white;
+    color: black;
+
+    height: fit-content;
+    overflow: visible;
+    z-index: 0;
+
+    padding: 4rem 0 0;
+}
+
+/*FAQ*/
+    summary{
+        font-size: 1.1rem;
+        border: 1px solid rgb(184, 184, 184);
+        box-shadow: -1px 3px 4px 0 rgba(68, 67, 67, 0.3);
+        border-radius: 15px;
+
+        padding: 1.2rem;
+        margin: .5rem 0;
+
+        z-index: 0;
+
+        text-align: start;
+        background-color: white;
+    }
+
+    details{
+        z-index: 0;
+
+        padding: 0 1.5rem;
+    }
+
+    details p, details ol{
+        margin: 0 1rem .5rem;
+        padding: 1rem 1rem;
+        line-height: 1.6rem;
+        font-size: 1.05rem;
+
+        background-color: rgb(236, 236, 236);
+
+        border: 1px solid rgb(202, 202, 202);
+        border-radius: 15px;
+        box-shadow: -1px 3px 4px 0 rgba(68, 67, 67, 0.15);
+
+        z-index: 1;
+    }
+
+    details ol{
+        padding: 1rem 3rem;
+    }
+
+
+/*Text Style*/
+    .faq h2{
+        font-size: 1.3em;
+
+        color: rgb(143, 143, 143);
+
+        padding-bottom: 1rem;
+    }
+
+    .faq h3{
+        font-size: 1.05em;
+        color: rgb(143, 143, 143);
+
+        margin-top: 2rem;
+
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .faq h3 a{
+        color: rgb(143, 143, 143);
+    }
+
+    .NaviList2{
+        display: none;
+    }
+
+    .active{
+        display: block;
+    }
+
+/*Button*/
+    button{
+        z-index: 1;
+
+        margin: 2rem 0;
+    }
+
+/*Decoration*/
+    #Bolinhas{
+        position: absolute;
+
+        bottom: -2.4rem;
+        left: 0;
+
+        opacity: .7;
+
+        z-index: -1;
+    }
+
+    #BolinhasDesktop{
+        display: none;
+    }
+
+
+    /*DESKTOP*/
+    @media (min-width: 700px) and (orientation: landscape) {
+
+    .faq{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        background-color: rgb(243, 243, 243);
+        color: black;
+
+        height: fit-content;
+        overflow: visible;
+        z-index: 0;
+
+        padding: 4rem 0 0;
+    }
+
+    summary{
+        font-size: 1.1rem;
+        border: 1px solid rgb(184, 184, 184);
+        box-shadow: -1px 3px 4px 0 rgba(68, 67, 67, 0.3);
+        border-radius: 15px;
+        min-width: 80vw;
+
+        padding: 1.2rem;
+
+        z-index: 0;
+
+        text-align: start;
+        background-color: white;
+    }
+
+    details{
+        z-index: 0;
+        max-width: 83vw;
+
+        padding: 0 1.5rem;
+    }
+
+    details p, details ol{
+        margin: 0 1rem .5rem;
+        padding: 1rem 1rem;
+        line-height: 1.6rem;
+        font-size: 1.05rem;
+
+        background-color: rgb(236, 236, 236);
+
+        border: 1px solid rgb(202, 202, 202);
+        border-radius: 15px;
+        box-shadow: -1px 3px 4px 0 rgba(68, 67, 67, 0.15);
+
+        z-index: 1;
+    }
+
+    details ol{
+        padding: 1rem 3rem;
+    }
+
+    #Bolinhas{
+        display: none;
+    }
+
+    #BolinhasDesktop{
+        display: block;
+        position: absolute;
+        top: -9%;
+        left: 82%;
+        opacity: .7;
+
+        width: 15%;
+
+        z-index: -1;
+    }
+
+}

@@ -1,0 +1,33 @@
+
+#bolinhasGeral{
+    top: 22.5rem;
+    left: 12rem;
+}
+
+
+
+@media (min-width: 700px) and (orientation: landscape){
+    #mainBanner{
+        background-image: url(/Images/Site/Organizacao/Banner/BG.png);
+    }
+
+    #bolinhasGeral{
+        top: 70%;
+        left: 80%;
+    }
+
+    /*Cards*/
+    #cardsWrapperDesktop{
+        padding: 0 5rem 2rem;
+    }
+
+    #bonequinhos{
+        height: 4rem;
+    }
+
+    #textoDeApoioTextWrapper h3{
+        font-size: 1.1rem;
+    }
+
+    
+}

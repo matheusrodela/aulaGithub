@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <meta name="author" content="Matheus Rodela">
+    <meta name="description" content="Termos de adesão Imobplace.">
+    <meta name="theme-color" content="rgb(0, 20, 77)">
+    <title>Termos de adesão</title>
+
+    <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!--CSS - Nav bar-->
+        <link rel="stylesheet" href="/NavBar/NavBar.css">
+        <link rel="stylesheet" href="/NavBar/HamburgerAnimation/HamburgerAnimation.css">
+    <!--CSS - Framework -> Main; Contato; Footer; Components-->
+        <link rel="stylesheet" href="/framework/Footer/Contato.css">
+        <link rel="stylesheet" href="/framework/Footer/Footer.css">
+        <link rel="stylesheet" href="/framework/Footer/Faq.css">
+        <link rel="stylesheet" href="/framework/Page/Main.css">
+        <link rel="stylesheet" href="/framework/Components/components.css">
+    <!--CSS - Current page-->
+        <link rel="stylesheet" href="/Paginas/legal.css">
+
+    <!--JS - don't forget the 'defer property'-->
+        <script src="/NavBar/NavBar.js" defer></script>
+        <script src="/NavBar/HamburgerAnimation/HamburgerAnimation.js" defer></script>
+        <script src="/NavBar/NavScroll.js" defer></script>
+        <script src="/framework/page.js" defer></script>
+    <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="/Images/Site/favicon.ico">
+
+    <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+</head>
+
+<body>
+    <div class="page-wrapper">
+    <header>
+        <!--CSS do nav em NavBar>NavBar-->
+            <nav class="NavBar" id="navbar">
+                <div class="Menu"  id="ToggleButton">
+                    <div class="menu-btn">
+                        <div class="menu-btn__burger"></div>
+                    </div>
+                </div>
+
+                <div id="logoContainer">
+                    <a href="/index.html">
+                        <img src="/Images/Site/Horizontalimobplace.svg" alt="Logomarca" id="PrimaryIcon">
+                        <!--Revisar caminho da imagem-->
+                    </a>
+                </div>
+    
+                <ul class="NavList" id="NaviList">
+                    <a href="/Paginas/Pricing.html"><li class="ListItem">Preços</li></a>
+                    <a href="/Paginas/Divulgacao.html"><li class="ListItem">Divulgação de imóveis</li></a>
+                    <a href="/Paginas/Organizacao.html"><li class="ListItem">CRM e gestão de contratos</li></a>
+                    <a href="/Paginas/Rede.html"><li class="ListItem">Rede de corretores parceiros</li></a>
+                <!--Add 'id="Focus"' na página atual-->
+                <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                </ul>
+    
+                <ul class="NavListDesktop">
+                    <a href="/Paginas/Pricing.html"><li class="ListItemDesktop"><button>Conheça Nossos Pacotes</button></li></a>
+                </ul>
+            </nav>
+    </header>
+
+    <main>
+        <!--CSS body; main; article; section. em framework>Page>Main -->
+                <article id="legal">
+            <h1>Termos de adesão</h1>
+
+            <div id="download">
+                <button>
+                    <a href="/pdf/Contrato_de_Parceiria_Comercial_Imobplace_ V03_10_2022.pdf" download="Contrato de parceria comercial">Contrato de parceria comercial</a>
+                    <img src="/Images/Site/legal/download.png" alt="baixar">
+                </button>
+    
+                <button>
+                    <a href="/pdf/Nomenclatuaras_e_Definições_Termos_e_Condições_Imobplace_V03_10_2022.pdf" download="Nomenclaturas e definições">Nomenclaturas e definições</a>
+                    <img src="/Images/Site/legal/download.png" alt="baixar">
+                </button>
+                
+                <button>
+                    <a href="/pdf/Politica_de_Privacidade_Imobplace_V03_10_2022.pdf" download="Política de privacidade">Política de privacidade</a>
+                    <img src="/Images/Site/legal/download.png" alt="baixar">
+                </button>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+
+        <section class="contact">
+            <!--CSS do contact em framework>Footer>Contato-->
+                <h2>Contato</h2>
+                <p>Ficou com alguma dúvida ou quer saber mais sobre a empresa? Envie sua mensagem e responderemos o mais rápido possível!</p>
+    
+                <form action="" id="Contato">
+                    <fieldset form="Contato" name="inputsContato">
+                        <label for="Nome">Nome</label>
+                        <input type="text" id="Nome" placeholder="Nome" form="Contato" name="Nome" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" placeholder="Email" form="Contato" name="Email" required title="É obrigatório preencher todos os campos para o envio da mensagem"title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Telefone">Telefone</label>
+                        <input type="tel" id="Telefone" placeholder="Telefone" form="Contato" name="Telefone" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Assunto">Assunto</label>
+                        <input type="text" list="AssuntoContato" id="Assunto" placeholder="Assunto" form="Contato" name="Contato" required title="É obrigatório preencher todos os campos para o envio da mensagem">
+    
+                        <label for="Mensagem"></label>
+                        <textarea name="Mensagem" id="Mensagem" placeholder="Mensagem" cols="20" rows="10" form="Contato" required title="É obrigatório preencher todos os campos para o envio da mensagem"></textarea>
+        
+                    <button type="submit" id="EnviarButton" form="Contato" name="Enviar" value="Enviar">Enviar</button>
+                    </fieldset>
+                </form>
+    
+                <datalist id="AssuntoContato" name="AssuntoContato">
+                    <option>Dúvida</option>
+                    <option>Sugestão</option>
+                    <option>Reclamação</option>
+                </datalist>
+
+                <img src="/Images/Site/Footer/mascoteContatoDesktop.png" alt="Mascote fazendo sinal de joia." class="mascotContatoDesktop">
+            </section>
+
+        <section class="footer">
+            <div id="footerTextContainer">
+                <div class="logoAndLegal">
+                    <div id="logoFooterContainer">
+                        <img src="/Images/Site/Footer/LogoUrsoBranca.svg" alt="Logo Urso Branca">
+                        <!--Revisar caminho da imagem-->
+                    </div>
+                    <p id="copyright">© 2022  imobplace &emsp; <small>CNPJ: 43.886.546./0001-02</small> <br> <small>CRECI/PJ-MG: 7197 &emsp; IM/BH: 1.342.874/001-6</small></p>
+                </div>
+    
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="/Paginas/Pricing.html">Planos</a></li>
+                        <li><a href="/Paginas/FaqPage.html">Perguntas Frequentes</a></li>
+                        <li><a href="/Paginas/termosDeAdesao.html">Termos de adesão</a></li>
+                        <li><a href="/Paginas/Cookies.html">Cookies</a></li>
+                        <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                    </ul>
+                </div>
+
+                <div id="RightSideDesktop">
+                    <div class="footerNavDesktop">
+                        <li><a href="/Paginas/Pricing.html">Planos</a></li>
+                        <li><a href="/Paginas/FaqPage.html">Perguntas Frequentes</a></li>
+                        <li><a href="/Paginas/termosDeAdesao.html">Termos de adesão</a></li>
+                        <li><a href="/Paginas/Cookies.html">Cookies</a></li>
+                    </div>
+        
+                    <div class="SocialMediaContainer">
+                        <a href="https://www.facebook.com/Imobplace"><img src="/Images/Site/Footer/Facebook.svg" class="socialMedia" alt="Logo Facebook"></a>
+                        <a href="https://instagram.com/imobplace_?igshid=YmMyMTA2M2Y="><img src="/Images/Site/Footer/Instagram.svg" class="socialMedia" alt="Logo Instagram"></a>
+                        <a href="https://www.linkedin.com/company/imobplace/"><img src="/Images/Site/Footer/LinkedIn.svg" class="socialMedia" alt="Logo LinkedIn"></a>
+                        <!--ADD OS CAMINHOS NECESSÁRIOS PARA CADA PÁGINA-->
+                    </div>
+                </div>
+            </div>
+
+            <img src="/Images/Site/Footer/MascoteFooter.svg" alt="Mascote fazendo sinal de joia." id="mascoteFooter">
+        </section>
+    </footer>
+    </div>
+</body>
+</html>

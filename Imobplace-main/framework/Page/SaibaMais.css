@@ -1,0 +1,403 @@
+
+/*Banner*/
+#mainBanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+
+    height: fit-content;
+    background-image: url(/Images/Site/Organizacao/Banner/Component\ 8.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+
+    color: white;
+
+    padding: 5.5rem 2rem 10rem;
+
+    overflow: hidden;
+}
+
+#mainBanner h2{
+    color: rgb(206, 254, 255);
+
+    text-transform: uppercase;
+
+    font-size: 1.1rem;
+
+    padding-bottom: 2.2rem;
+}
+
+#mainBanner h1{
+    font-size: 1.5rem;
+
+    padding-bottom: 2.2rem;
+
+    line-height: 1.8rem;
+}
+
+#mainBanner p{
+    text-transform: uppercase;
+
+    font-size: 1rem;
+
+    padding-bottom: 2.2rem;
+}
+
+#h2Container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding-left: 2rem;
+
+    width: 100vw;
+}
+
+#bolinhasGeral{
+    position: absolute;
+    top: 21.5rem;
+    left: 12rem;
+
+    height: 23rem;
+}
+
+#bolinhasDesktop{
+    display: none;
+}
+
+
+/*CARDS VANTAGENS*/
+#cardsWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+
+    padding: 2rem 1rem;
+
+    background-color: white;
+}
+
+#cardsWrapper h1{
+    text-transform: uppercase;
+
+    text-align: center;
+
+    font-size: 1.25rem;
+    line-height: 2rem;
+
+    padding: 0 1.8rem;
+    margin: 1rem 0;
+
+    color: rgb(81, 81, 81);
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: .5px solid rgb(218, 218, 218);
+    border-radius: 15px;
+
+    box-shadow: -1px 3px 4px 0 rgba(68, 67, 67, 0.2);
+
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+.cards img{
+    height: 7rem;
+
+    padding-bottom: 1rem;
+}
+
+#bonequinhos{
+    height: 6rem;
+}
+
+.cards h2{
+    color: rgb(2, 31, 110);
+
+    text-transform: uppercase;
+    text-align: center;
+
+    padding-bottom: 1rem;
+}
+
+.cards p{
+    text-align: center;
+
+    color: rgb(122, 122, 122);
+
+    padding-bottom: 1rem;
+}
+
+
+/*TEXTO DE APOIO*/
+#textoDeApoio{
+    padding: 3rem 0 0;
+
+    background-color: white; 
+}
+
+#textoDeApoio h1{
+    color: rgb(0, 40, 151);
+
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+#textoDeApoio p{
+    color: rgb(81, 81, 81);
+
+    font-size: 1.1rem;
+
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+#textoDeApoio h3{
+    color: rgb(81, 81, 81);
+    font-weight: bold;
+    padding: 0 2rem;
+}
+
+#textoDeApoio img{
+    max-width: 100vw;
+    height: auto;
+}
+
+#imagemApoioDesktop{
+    display: none;
+}
+
+
+
+
+@media (min-width: 700px) and (orientation: landscape){
+    #mainBanner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    
+        height: 110vh;
+        width: 100vw;
+
+        background-image: url(/Images/Site/Rede/MainBannerDesktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        color: white;
+    
+        padding: 10rem;
+    }
+    
+    #mainBanner h2{
+        color: rgb(206, 254, 255);
+    
+        text-transform: uppercase;
+    
+        font-size: 1.1rem;
+    
+        padding-bottom: 1.5rem;
+    }
+    
+    #mainBanner h1{
+        font-size: 2.1rem;
+    
+        padding-bottom: 1.5rem;
+    
+        line-height: 2.3rem;
+
+        width: 40vw;
+    }
+    
+    #mainBanner p{
+        text-transform: uppercase;
+        font-weight: light;
+    
+        font-size: .9rem;
+        line-height: 1.4rem;
+    
+        padding-bottom: 0;
+
+        width: 44vw;
+    }
+    
+    #h2Container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    
+        padding-left: 0;
+    
+        width: 100vw;
+    }
+
+    #bolinhasGeral{
+        top: 70%;
+        left: 80%;
+    }
+
+    #mainBanner button{
+        font-size: .8rem;
+        padding: .6rem 2.5rem;
+    }
+
+    #bolinhasDesktop{
+        display: block;
+        position: absolute;
+        width: 12%;
+        top:-5%;
+        left: 1.5%;
+    }
+
+
+    /*cards*/
+    #cardsWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    
+        padding: 2rem 1rem 1rem;
+    
+        background-color: white;
+    }
+
+    #cardsWrapperDesktop{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100vw;
+
+        gap: 3rem;
+
+        margin-top: 2rem;
+
+        padding: 0 5rem 4rem;
+    }
+    
+    #cardsWrapper h1{
+        text-transform: uppercase;
+    
+        text-align: center;
+    
+        font-size: 1.35rem;
+        line-height: 2rem;
+    
+        padding:  1rem 0;
+        margin: 0 20rem;
+    
+        color: rgb(81, 81, 81);
+    }
+    
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 22vw;
+        height: 51vh;
+    
+        border: .5px solid rgb(218, 218, 218);
+        border-radius: 15px;
+    
+        box-shadow: -1px 3px 4px 0 rgba(68, 67, 67, 0.2);
+    
+        padding: 1rem;
+        margin: 0;
+    }
+     
+    .cards img{
+        height: 4rem;
+    
+        padding-bottom: 0;
+    }
+    
+    .cards h2{
+        color: rgb(2, 31, 110);
+    
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-align: center;
+    
+        padding: 1.5rem 0 1rem;
+    }
+    
+    .cards p{
+        text-align: center;
+    
+        color: rgb(122, 122, 122);
+    
+        padding-bottom: 1rem;
+    }
+
+
+    /*TEXTO DE APOIO*/
+    #textoDeApoio{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        padding: 0;
+
+        background-color: white; 
+
+        height: 90vh;
+    }
+
+    #textoDeApoioTextWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        width: 39%;
+    }
+
+    #textoDeApoio h1{
+        color: rgb(0, 40, 151);
+
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        padding: 0 2rem;
+    }
+
+    #textoDeApoio p{
+        color: rgb(81, 81, 81);
+
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        text-align: justify;
+
+        margin-bottom: 2rem;
+        padding: 0 2rem;
+    }
+
+    #textoDeApoio h3{
+        color: rgb(81, 81, 81);
+        font-weight: bold;
+        padding: 0 2rem;
+    }
+
+    #imagemApoio{
+        display: none;
+    }
+
+    #imagemApoioDesktop{
+        display: block;
+
+        width: 40%;
+    }
+
+}
